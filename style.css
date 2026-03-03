@@ -1,0 +1,208 @@
+/* =========================
+   ROOT THEME (Frappe Default)
+========================= */
+:root {
+  --bg: #303446;
+  --surface: #414559;
+  --overlay: #626880;
+  --fg: #c6d0f5;
+  --muted: #b5bfe2;
+  --blue: #8caaee;
+  --pink: #f2d5cf;
+  --red: #ea999c;
+  --green: #a6d189;
+  --mauve: #ca9ee6;
+  --yellow: #e5c890;
+  --peach: #ef9f76;
+  --border: #babbf1;
+  --accent: #684eff;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  /* Added transition for smooth theme switching */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.window {
+  width: 100%;
+  max-width: 90ch;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border-radius: 8px;
+}
+
+/* =========================
+   TITLEBAR
+========================= */
+.titlebar {
+  background: var(--surface);
+  border-radius: 8px 8px 0 0;
+  padding: .5rem .75rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot.r { background: #ea999c; }
+.dot.y { background: #e5c890; }
+.dot.g { background: #a6d189; }
+
+.win-title {
+  margin-left: .5rem;
+  color: var(--overlay);
+  font-size: .82rem;
+  user-select: none;
+}
+
+/* =========================
+   TERMINAL BODY
+========================= */
+.terminal-body {
+  background: var(--bg);
+  border: 1px solid var(--surface);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 1.25rem 1.25rem .75rem;
+  height: 70vh;
+  overflow-y: auto;
+  cursor: text;
+}
+
+/* Scrollbar (WebKit) */
+.terminal-body::-webkit-scrollbar { width: 8px; }
+.terminal-body::-webkit-scrollbar-track { background: var(--bg); border-radius: 0 0 8px 0; }
+.terminal-body::-webkit-scrollbar-thumb { background: var(--surface); border-radius: 4px; }
+.terminal-body::-webkit-scrollbar-thumb:hover { background: var(--overlay); }
+
+/* =========================
+   TERMINAL TEXT
+========================= */
+.line { line-height: 1.65; word-break: break-word; }
+.line.mt { margin-top: .8rem; }
+.line a { color: var(--pink); text-decoration: none; }
+.line a:hover { text-decoration: underline; }
+
+a.github:hover { color: var(--green); }
+a.twitter:hover { color: #1a8cd8; }
+a.youtube:hover { color: #ff4444; }
+
+/* =========================
+   COLORS / UTILS
+========================= */
+.pu { color: var(--blue); }
+.pp { color: var(--muted); }
+.pd { color: var(--pink); }
+.pc { color: var(--fg); }
+.c-blue { color: var(--blue); }
+.c-pink { color: var(--pink); }
+.c-green { color: var(--green); }
+.c-mauve { color: var(--mauve); }
+.c-yellow { color: var(--yellow); }
+.c-peach { color: var(--peach); }
+.c-muted { color: var(--muted); }
+.c-over { color: var(--overlay); }
+.c-red { color: var(--red); }
+.bold { font-weight: 700; }
+
+/* =========================
+   BADGES / LINKS
+========================= */
+.badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: .05em .45em;
+  font-size: .88rem;
+  margin-bottom: .35rem;
+  border-radius: 4px;
+}
+.link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 0;
+  margin-top: .2rem;
+}
+
+/* =========================
+   NEOFETCH STYLE
+========================= */
+.neo-wrap { display: flex; gap: 2.5rem; flex-wrap: wrap; margin-top: .3rem; }
+.neo-art { color: var(--peach); line-height: 1.35; white-space: pre; flex-shrink: 0; font-size: .85rem; }
+.neo-info { display: flex; flex-direction: column; }
+.neo-row { line-height: 1.6; white-space: nowrap; }
+.neo-key { color: var(--blue); font-weight: 700; }
+.neo-val { color: var(--fg); }
+.neo-sep { color: var(--overlay); }
+.swatches { display: flex; gap: 3px; margin-top: .6rem; }
+.sw { width: 20px; height: 20px; border-radius: 3px; }
+
+/* =========================
+   INPUT ROW
+========================= */
+.input-row { display: flex; align-items: center; margin-top: .6rem; }
+
+#cmd-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--fg);
+  font-size: inherit;
+  font-weight: 500;
+  flex: 1;
+  caret-color: var(--pink);
+  margin-left: .35rem;
+  width: 100%;
+}
+
+/* =========================
+   ANIMATIONS & FOOTER
+========================= */
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(3px); }
+  to { opacity: 1; transform: none; }
+}
+.fadein { animation: fadein .2s ease forwards; }
+
+footer { margin-top: 1rem; color: var(--overlay); font-size: .8rem; max-width: 90ch; }
+footer a { color: var(--muted); }
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (min-width: 600px) { body { font-size: 1.1rem; } }
+@media (max-width: 520px) { .neo-art { display: none; } }
