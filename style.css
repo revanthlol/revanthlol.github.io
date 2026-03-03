@@ -45,17 +45,55 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 1.5rem;
+  align-items: center;       /* Centers horizontally */
+  justify-content: center;   /* Centers vertically */
+  height: 100vh;             /* Locks body to exact browser height */
+  padding: 3vh 4vw;          /* Creates the outer padding */
+  overflow: hidden;          /* Prevents the whole page from scrolling */
 }
 
 .window {
   width: 100%;
-  max-width: 90ch;
+  max-width: 1400px;         /* Limits width on ultra-wide monitors */
+  flex: 1;                   /* Makes window take up all available height */
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  border-radius: 8px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.4); /* Deep drop-shadow for 3D OS feel */
+  border-radius: 10px;
+}
+
+/* =========================
+   TERMINAL BODY (FIXED)
+========================= */
+.terminal-body {
+  background: var(--bg);
+  border: 1px solid var(--surface);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  padding: 1.5rem 2rem 1rem;
+  
+  /* REAL TERMINAL BEHAVIOR */
+  flex: 1;                   /* Fills the rest of the window */
+  height: 0;                 /* Crucial: forces overflow to work inside flex */
+  overflow-y: auto;          /* Enables inner scrollbar */
+  cursor: text;
+}
+
+/* Scrollbar (WebKit) */
+.terminal-body::-webkit-scrollbar { width: 10px; }
+.terminal-body::-webkit-scrollbar-track { background: var(--bg); border-radius: 0 0 10px 0; }
+.terminal-body::-webkit-scrollbar-thumb { background: var(--surface); border-radius: 5px; border: 2px solid var(--bg); }
+.terminal-body::-webkit-scrollbar-thumb:hover { background: var(--overlay); }
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  margin-top: 1.5rem;
+  color: var(--overlay);
+  font-size: .85rem;
+  text-align: center;        /* Centers footer below the window */
+  flex-shrink: 0;
 }
 
 /* =========================
