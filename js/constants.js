@@ -1,12 +1,20 @@
 export const DATA = {
   about: [
-    "linux user, backend dev, terminal addict.",
-    "currently building <span class='c-mauve'>fun web apps</span> &amp; learning <span class='c-peach'>Rust</span>.",
-    "i like fast software, minimal setups, and tools that stay out of your way.",
+    "Linux loyalist, backend tinkerer, and yes, I do spend too much time in the terminal.",
+    "Currently cobbling together <span class='c-mauve'>web apps that won't crash on purpose</span> while pretending Rust isn't out to humble me.",
+    "I gravitate toward software that's swift, setups that don't fight back, and tools with the decency to vanish when uninvited.",
   ],
-  interests: ["linux & window managers", "backend development", "cybersecurity basics", "low-level systems", "making cringy things fun"],
+  interests: [
+    "Linux and its window managers—because why have one when you can have five?",
+    "messing around with computers, because why not?",
+    "Rescuing cringeworthy ideas from total obscurity",
+  ],
   contact: [
-    ["email", "personallyrevanth@gmail.com", "mailto:personallyrevanth@gmail.com"],
+    [
+      "email",
+      "personallyrevanth@gmail.com",
+      "mailto:personallyrevanth@gmail.com",
+    ],
     ["github", "github.com/revanthlol", "https://github.com/revanthlol"],
     ["twitter", "@revanthlol", "https://x.com/revanthlol"],
   ],
