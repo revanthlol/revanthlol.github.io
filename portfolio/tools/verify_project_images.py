@@ -11,17 +11,17 @@ with sync_playwright() as p:
    page=b.new_page(viewport={'width':width,'height':900},has_touch=width<810,is_mobile=width<810)
    errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
    page.goto('http://127.0.0.1:8767'+route,wait_until='networkidle')
-   card=page.locator('.rev-card-primary').nth(1);img=card.locator('img');card.scroll_into_view_if_needed();page.mouse.move(0,0);page.wait_for_timeout(1000)
-   read=lambda:img.evaluate('(n)=>({filter:getComputedStyle(n).filter,opacity:getComputedStyle(n).opacity,src:n.getAttribute("src"),width:n.naturalWidth})')
+   card=page.locator('.rev-card-primary').nth(1);img=card.locator('.rev-focus-rack');base=card.locator('.rev-scan-base');card.scroll_into_view_if_needed();page.mouse.move(0,0);page.wait_for_timeout(1000)
+   read=lambda:img.evaluate('(n)=>({filter:getComputedStyle(n).filter,opacity:getComputedStyle(n).opacity,clip:getComputedStyle(n).clipPath,src:n.getAttribute("src"),width:n.naturalWidth})')
    rest=read();page.screenshot(path=str(ROOT/f'tools/images-rest-{width}-{route=="/"}.png'))
    assert rest['width']==1600
    if width>=810:
-    assert rest['filter']=='grayscale(1)' and rest['opacity']=='1'
-    card.hover();page.wait_for_timeout(200);assert 'blur(' in read()['filter'];page.wait_for_timeout(1000);hover=read();assert hover['filter']=='none' and hover['opacity']=='1'
+    assert rest['clip']=='inset(100% 0px 0px)' and base.evaluate('(n)=>getComputedStyle(n).filter')=='grayscale(1)'
+    card.hover();page.wait_for_timeout(100);beam=card.locator('.rev-image-mask').evaluate('(n)=>({top:parseFloat(getComputedStyle(n,"::after").top),height:n.clientHeight})');assert 0<beam['top']<beam['height'];page.screenshot(path=str(ROOT/f'tools/scanner-mid-{width}-{route=="/"}.png'));page.wait_for_timeout(1100);hover=read();assert hover['clip']=='inset(0px)' and hover['filter']=='none' and hover['opacity']=='1'
     page.screenshot(path=str(ROOT/f'tools/images-hover-{width}-{route=="/"}.png'))
-    page.mouse.move(0,0);card.focus();page.wait_for_timeout(1000);assert read()['filter']=='none'
-   else:assert rest['filter']=='none' and rest['opacity']=='1'
-   page.emulate_media(reduced_motion='reduce');page.mouse.move(0,0);card.evaluate('(n)=>n.blur()');page.wait_for_timeout(100);assert read()['filter']=='none';assert img.evaluate('(n)=>getComputedStyle(n).animationName')=='none'
+    page.mouse.move(0,0);card.focus();page.wait_for_timeout(1000);assert read()['clip']=='inset(0px)'
+   else:assert rest['clip']=='none' and base.evaluate('(n)=>getComputedStyle(n).display')=='none' and rest['filter']=='none' and rest['opacity']=='1'
+   page.emulate_media(reduced_motion='reduce');page.mouse.move(0,0);card.evaluate('(n)=>n.blur()');page.wait_for_timeout(100);assert read()['filter']=='none';assert img.evaluate('(n)=>getComputedStyle(n).transitionDuration')=='0s';assert card.locator('.rev-image-mask').evaluate('(n)=>getComputedStyle(n,"::after").display')=='none'
    if route=='/':
     photo=page.locator('img[src="/assets/work/web-apps.webp"]:visible').first;photo.scroll_into_view_if_needed();page.wait_for_timeout(600);assert photo.evaluate('(n)=>n.complete && n.naturalWidth>0 && n.currentSrc.endsWith("/assets/work/web-apps.webp")')
    assert not errors;rows.append(dict(width=width,route=route,rest=rest,errors=errors));page.close()

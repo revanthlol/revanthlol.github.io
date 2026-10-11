@@ -23,6 +23,8 @@ def generate(out):
    elif not existing.exists():image.save(destination,'WEBP',quality=80,method=6)
  from convert_project_images import convert
  convert(out)
+ from convert_work_images import convert as convert_work
+ convert_work(out)
  share=Image.new('RGB',(1200,630),'#f7f7f7');d=ImageDraw.Draw(share);font='/usr/share/fonts/TTF/DejaVuSans.ttf'
  d.text((64,70),'Revanth',fill='#111',font=ImageFont.truetype(font,84));d.line((64,210,1136,210),fill='#aaa',width=1)
  d.text((64,310),'Student.',fill='#111',font=ImageFont.truetype(font,54));d.text((64,385),'Open source developer.',fill='#111',font=ImageFont.truetype(font,54));d.text((64,555),'revanthlol.github.io',fill='#555',font=ImageFont.truetype(font,24));share.save(out/'assets/share.png',optimize=True)

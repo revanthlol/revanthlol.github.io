@@ -38,5 +38,6 @@ no gradients.
 
 File: `assets/work/linux-utilities.webp`
 
-These are prompts only. Web apps uses the restored original Web Design laptop
-photo; Browser tools and Linux utilities retain neutral generated artwork.
+These are optional future prompts. Web apps uses the original Web Design laptop
+photo; Browser tools uses the supplied fiber-optic photo, and Linux utilities
+uses the supplied workbench/penguin photo. All three are local compressed WebPs.

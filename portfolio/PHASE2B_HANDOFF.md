@@ -62,3 +62,16 @@ Supplemental interaction check verified actual visible tab images: Browser tools
 Rev approved reusing the old TUI before Projects, restyled in black/white/gray. Original root TUI files remain untouched. The repeatable patch copies them to terminal/ and patches the copy via tools/build_embedded_terminal.py; exact source replacement log is tools/terminal-replacements.json. A lazy same-origin iframe isolates the old global CSS, keyboard handlers, window controls and overlays from Framer. Startup autofocus and ambient idle screensavers are disabled; scrolling on touch does not focus the input. Tab on an empty command can leave the frame. The terminal uses local monospace fallback, with no Google Fonts call. Projects use the approved local11-entry data, including demo-only GILD; fake fallback repos, skill percentages, old fabricated filesystem entries and live GitHub fetch were removed in the copy. Bio/contact/filesystem match approved data. Legacy theme aliases map to monochrome; terminal commands remain implemented using the original registry. Root/main GitHub Pages cutover and deployment have not been performed.
 
 Playwright evidence tools/embedded-terminal-results.json:375/768/1280/1920, terminal before Projects, no parent/frame horizontal overflow, no startup focus theft, zero console errors/warnings, external requests and404s. Verified help, whoami, neofetch, projects, cat project/email files, theme, autocomplete, history, Ctrl+L clear and empty-prompt Tab exit. Full easter-egg/window-control tests were not run. No commits.
+
+## Latest image treatment
+
+Project cards now use Scanner reveal from Rev's local CSS playground: fully
+visible grayscale base, color layer revealed bottom-to-top, moving 3px white
+beam, one-second reference easing. Matching static markup and runtime trees
+contain both layers. Touch/mobile shows color immediately; reduced motion hides
+the beam and disables the transition. Details remain sharp with grayscale/color
+hover. Original Web Design photo is Web apps; supplied fiber-optic photo is
+Browser tools; supplied workbench/penguin photo is Linux utilities. Compressed
+tab files live in assets/work/. convert_work_images.py reads the supplied
+captured image without changing captured/, and archives the PNG under ignored
+tools/reference/. generate_phase2b_assets.py retains these choices on rebuild.
