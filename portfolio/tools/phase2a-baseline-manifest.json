@@ -1,0 +1,898 @@
+[
+  {
+    "file": "index.html",
+    "sha256": "e6d4a81f173f06576df6ffa9013e9bbba0d016dca5c6a9bf5bbc571c657e16fc"
+  },
+  {
+    "file": "url-map.json",
+    "sha256": "0b3d5d3c50ba93632c662408aaf057695602d004f471674aac23162d96075c0c"
+  },
+  {
+    "file": "404/index.html",
+    "sha256": "a529a866aeac72cdcc85dff385c553b16973afe8087b60435cbe32e8cad48d54"
+  },
+  {
+    "file": "contact/index.html",
+    "sha256": "022fde9f7690cfd3f24bca1168a65f6863f9cd72fdad2232afed8def029baaf1"
+  },
+  {
+    "file": "projects/index.html",
+    "sha256": "d1faba4a8f9835fb4a80e60f8e42b42168d0fa20f1790ed2da824009e0ec1a6f"
+  },
+  {
+    "file": "stubs/events.js",
+    "sha256": "5db98bf25432ac08ae374c5fa617168ac5cee6d73879a077fba0ed1c0b16dd5e"
+  },
+  {
+    "file": "stubs/url-map.js",
+    "sha256": "08d1eff47d5411f9888add8577265ae5d91a4cbe68d70c7895c4938c80ef35ee"
+  },
+  {
+    "file": "projects/bima-ai-agency-template/index.html",
+    "sha256": "ab646a204a78d46f1d9c2ddb9d233d5b81ff08357c7ef6ec0128c11cde53f7fe"
+  },
+  {
+    "file": "projects/batavia-fashion-ecommerce-template/index.html",
+    "sha256": "05380a421d6ed605c779852797ce25b714d8f4f33e7dc958c1d33d07fab68445"
+  },
+  {
+    "file": "projects/mandala-marketing-agency-template/index.html",
+    "sha256": "9cf4fcb70a98fd2f4fc0b9e5ae72d5b823fea1725122b5a928830094cefb2d1f"
+  },
+  {
+    "file": "assets/framer.com/e140648c803690f29fd787ad.mjs",
+    "sha256": "fddf1cea4b1cf88d22fd46e249099f2e6ab193ef81d8fabb7b2406f47df8497e"
+  },
+  {
+    "file": "assets/framer.com/51ea1f07d1a813e79b923eb7.html",
+    "sha256": "1ada8171bf3a1ad1eeecbe0bdfa807fcd29bde3a00feceb4ca0290c85e76102b"
+  },
+  {
+    "file": "assets/framer.com/6da893e5e41f367a4f9647eb.mjs",
+    "sha256": "92521ceb305b189d9cb9547cc3bf46ee53b3f3589d377cc03209c3872b383545"
+  },
+  {
+    "file": "assets/framer.com/021ae6cf61bee7dba5c52b67.mjs",
+    "sha256": "dbe8b7b6054fca98494ffe83b1a0b9c134c0a76b5c808e6c07bc445fa828e455"
+  },
+  {
+    "file": "assets/framer.com/11e613ce16d5c968805b3a1c.mjs",
+    "sha256": "bf1d7bcebf39e06c99debce9f073e907478456d44b62353bef04f6ca818965e8"
+  },
+  {
+    "file": "assets/api.framer.com/5e639def14d000159a6fa74e.json",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+    "file": "assets/api.framer.com/acba50cc6616d4cfb8323480.json",
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/5fb975e303b5a8715272d752.woff2",
+    "sha256": "782322b0ff655bebb73859a148d6abc2d075a969b44d297d576f8891b969ab84"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/7066669e1898bb2d80b8361b.woff2",
+    "sha256": "9bcd256e41f05dc62f398c068a03ad340f61f4906c603be9204728445608ef82"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/d32d8c4d7664d574b79c196b.woff2",
+    "sha256": "d630e963a409e1224624e41755fded290bef82a8d55f584592623ad0297e81bf"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/546fb06f14d7bdf06f93b50f.woff2",
+    "sha256": "7102d264fb6a3e5838c3c1459bb95d0cd04cd4575c630522899b31bf92675f1c"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/553cbc164d76eb1add4c7135.woff2",
+    "sha256": "19f9c92546aa300c312235e3125af1b81394d8db9a4bc4a425cd5b641d2d54e1"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/f7530ad2ccd9199918589445.woff2",
+    "sha256": "5c20f2508495b5e726a10d021f0d4148f2ddc14ffbfbcd831e951a678c07e29e"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/d7986d7e062feb094f190a6d.woff2",
+    "sha256": "2a08fa364ca598184f42cdcb0bd233d5373bf4eab566fbe7faca79273846fe28"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/c8841878adc10505cd6a059c.woff2",
+    "sha256": "8fa40e5d248247735eb97a0bd593b8852440430600d6ba01364c31fe0abc1fe1"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/1ea7c16f7c9d7777e948f779.woff2",
+    "sha256": "824f485b5d26e2f2da3c2b236132ece1bc8e4e43373452950bb0e40548b4313f"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/39a6649235412b79fc0ef92b.woff2",
+    "sha256": "8e117383cc325235994273a888ae6202f4410a8b73b36d0af8460ee222eb9087"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/921975a1a8eed74445d2b61c.woff2",
+    "sha256": "cd2bc6f0bd367f86b79ca46c7f958f5a4b43344f7a7109de00653791e2692f20"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/12f11dbf306b172c5cd9b0ee.woff2",
+    "sha256": "6894439694946a589d157ece003086960a6a4013d74a813dab7602efdb3d8c09"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/79f5a1879ff2d10a5f39ff20.woff2",
+    "sha256": "2317fa4bb293c9c0b110e18315d529235c47a0ddd3338cea3d8c7955e927899e"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/34263349083b799757582df2.woff2",
+    "sha256": "19c68801d6bf3bd9b7454c391eedcfc8892d787defce75486385185c9e6439a9"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/60b048d824a14d5da1968555.woff2",
+    "sha256": "06a429699716783d6d3d67aef7c251b2c6e3b567fea885471a85c60d8eba4815"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/44bff64434826897010dc007.woff2",
+    "sha256": "869e98f97f9ea358e12fd7f3c9061301015daea5a7765fbd831ac6cd77f71766"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/c80a862f451e964f3397c21b.woff2",
+    "sha256": "d69a03165d04b0a98a115d28e3507f419abe5cc04edb518857ee458d6bf1a9cf"
+  },
+  {
+    "file": "assets/fonts.gstatic.com/b5ce1076b1dd20af2bbca575.woff2",
+    "sha256": "51a17bcabc37885da43f2e993a4893101055b7a830628e1eab47c9d72f632322"
+  },
+  {
+    "file": "assets/framerusercontent.com/e9605ef2d9f7e8272130eb39.avif",
+    "sha256": "d108bbcb9d30b20580c86251b8a3e7b59e245eecb5d379ba11750f2815d126ea"
+  },
+  {
+    "file": "assets/framerusercontent.com/fb6c8c954eb8696f84daa9eb.png",
+    "sha256": "de9341ce0cfc28c217213dff707649444b99ac60cf865f7a0746addef807a445"
+  },
+  {
+    "file": "assets/framerusercontent.com/b055aed328b3795496179c09.woff2",
+    "sha256": "f2207c07c5ac395d1d8c33f46655ded6aea7e66269431e3f943693c0318441dc"
+  },
+  {
+    "file": "assets/framerusercontent.com/6d359314b4866f53236df79a.jpg",
+    "sha256": "de7525412e21c4aa54c1d5df38e233aa285cdc596e1c9cdaf6756a1244660d03"
+  },
+  {
+    "file": "assets/framerusercontent.com/c7f415936b32dc9a8368b19d.avif",
+    "sha256": "f4f21f1d88862092c28c6b56d8c1dc22a995f9cfb6264b1dcd0bf26a7521f25e"
+  },
+  {
+    "file": "assets/framerusercontent.com/f0e2f981fc591532bf7f8c26.png",
+    "sha256": "578c1b691b583064908661f3b828ab6da4ffd5e85e57758701c6544b96ab5107"
+  },
+  {
+    "file": "assets/framerusercontent.com/ee85b182495aac94819e85f5.woff2",
+    "sha256": "2dc968863319a6f57e6428a7b4c292ae254d3e462b5f23f71bab492317067d5f"
+  },
+  {
+    "file": "assets/framerusercontent.com/1673721b333ac6cb359ffd53.mjs",
+    "sha256": "4cf74e844dce3bc61a15b3687b05aceff75f4da99181156d04f8ef181283f429"
+  },
+  {
+    "file": "assets/framerusercontent.com/2666a469c59bd1f6dc803458.woff2",
+    "sha256": "3d9aaa88875ebe3c7140cc0a43dfd88f844008e24720bb5095157b66c3a15a52"
+  },
+  {
+    "file": "assets/framerusercontent.com/a1c0c0512e26437f194973c5.mjs",
+    "sha256": "da6cd28e075b9125560bd810341af1068db6128856b14cba5eb7890c331d41a1"
+  },
+  {
+    "file": "assets/framerusercontent.com/5b9dfac8f8afe7ed26a59d0b.avif",
+    "sha256": "9c51ce492ef714ebf083b76e15c6c3b41656daac2172435e9fc565bdbd9beeed"
+  },
+  {
+    "file": "assets/framerusercontent.com/5afd6099115c5013790f644e.woff2",
+    "sha256": "362b168da82d69bc67d2a358fa20c59151cb4ceac8a5506be6baef5e6827fa42"
+  },
+  {
+    "file": "assets/framerusercontent.com/8bf56301b6409a376ebf2d88.woff2",
+    "sha256": "52ff2ce7d1511770c47190716c455768641fc8a408f4cb480f7be227047ad651"
+  },
+  {
+    "file": "assets/framerusercontent.com/dfa7f96c71c1563d912a8510.woff2",
+    "sha256": "e38dae845a9fcdd07cf1728744263315aa3226f0bbb9dc53b3bd533ca245b034"
+  },
+  {
+    "file": "assets/framerusercontent.com/f0aa2283ae1dd466533fe1a0.jpg",
+    "sha256": "7c15984afa0d4d5ff5d5fc0eca40347a92715b370156e65b1bb2a9a41ff69788"
+  },
+  {
+    "file": "assets/framerusercontent.com/ba85a9eeeb4ec0186e29f4bd.mjs",
+    "sha256": "76c714a55003a336a9a2d2ad227edc014200272123cbd0885eafcf1b4b7300e3"
+  },
+  {
+    "file": "assets/framerusercontent.com/533b8b262cd07492a4ccee30.woff2",
+    "sha256": "af94eb9a265c32652e76960d9fc2eb4697fca35addad53fdad82640b0c3de8ae"
+  },
+  {
+    "file": "assets/framerusercontent.com/b3125ae9a4ca9bb86cb952c5.png",
+    "sha256": "2f4b2068e87e3573a1f25fe8089a90324eb9e2cef75f6c6a9e661805bec62991"
+  },
+  {
+    "file": "assets/framerusercontent.com/8c403dfa3d55d7240782341f.avif",
+    "sha256": "997ab896603a6517f980836a5a82a958e7727a0b8a38eb66517063f4ec7a7383"
+  },
+  {
+    "file": "assets/framerusercontent.com/efb987c2109a668f4db230e4.mjs",
+    "sha256": "64b733e14eb4eb1827c2a46bcb381e84c6ec3687b6c82848dde05e5b476168a8"
+  },
+  {
+    "file": "assets/framerusercontent.com/718ed7814f04af890e55b49b.jpg",
+    "sha256": "17a8f72aced052d3ce173a922b6426e941a477a4aa0f35800a6c41b97b0e1613"
+  },
+  {
+    "file": "assets/framerusercontent.com/06446dee0c8c7da1c24f7872.mjs",
+    "sha256": "750a7cae170b6cf25d9f987a57079f821bd84c9b816117d6635b4171762c36f4"
+  },
+  {
+    "file": "assets/framerusercontent.com/cce22defc0da0c75a18aede6.woff2",
+    "sha256": "606729efeb7c59b47470bf64ff71a8ba393ab0bed80f17482fd4ee995959fac6"
+  },
+  {
+    "file": "assets/framerusercontent.com/66350af6012071dadca61453.avif",
+    "sha256": "a0f477739c93dc728dd94d398301a7d2eeeacabc81b6927c74cdfc7bb9382ba8"
+  },
+  {
+    "file": "assets/framerusercontent.com/4a787ab86315f026d4203ee3.avif",
+    "sha256": "55215d9d44427eef992aaa09accad729904d823a00e5a75914865903f5346816"
+  },
+  {
+    "file": "assets/framerusercontent.com/388a7c4ebd43469a4ae03b3e.woff2",
+    "sha256": "3f6cafab2760e6bd3f59cefde6e45b14e57b8d05d0e63dd30b2e5927e848dab0"
+  },
+  {
+    "file": "assets/framerusercontent.com/48d547890ca14616aed33cf5.woff2",
+    "sha256": "305cc030ada673760c59e4f4ffac736ace0478598d957102c5574ab0b079f69e"
+  },
+  {
+    "file": "assets/framerusercontent.com/38899e11884aa2f0c84cbc4c.avif",
+    "sha256": "0ea03a31004456c695a265737892cc1e9428abce4a7bc4d92c371cc7244aa813"
+  },
+  {
+    "file": "assets/framerusercontent.com/2fb0cb19c43b19d56e03eb2a.jpg",
+    "sha256": "d673ff872d470e128b78deb069366c1e22c99ad0c3c8217bbe060203a7006a83"
+  },
+  {
+    "file": "assets/framerusercontent.com/39b616fd1213714cc29c8eda.woff2",
+    "sha256": "0e9f028b2d41c7978ff10b67d57b06eb4158f11db878f322017327c08d2319e3"
+  },
+  {
+    "file": "assets/framerusercontent.com/c7e8cab508c875f6b264b015.mjs",
+    "sha256": "ad5df1ad952f8e799944defa0ef9082d9831e0226f969c591dfe14bafe1e2a52"
+  },
+  {
+    "file": "assets/framerusercontent.com/42f270154bab0bea1700f521.mjs",
+    "sha256": "fe7a67689bd7487517efba0c4e1084d30fdb4b45c6a79f545dc5cfc116b5397b"
+  },
+  {
+    "file": "assets/framerusercontent.com/ca74d6701961184b51fa3e53.woff2",
+    "sha256": "88f8b52e9e88c8334d8a644d652c94df6bdf25c836729609e9a8f83d35189d11"
+  },
+  {
+    "file": "assets/framerusercontent.com/b8b4c65d650e824396d8acd3.woff2",
+    "sha256": "b5fc8863a07b6cca6a5cb4961a749a8353ea1b910498c7d5a5713d34e0186167"
+  },
+  {
+    "file": "assets/framerusercontent.com/c586032d6c60ee30d2b2ee4c.png",
+    "sha256": "8126c2d0fd6043ecd8b60e3b65f01a468286d3669852bf0cc3906f75e30520e9"
+  },
+  {
+    "file": "assets/framerusercontent.com/20025cdd2a198ff79ac2da4b.jpg",
+    "sha256": "f64cad6d4e8f0dfbbbad38bc8e61be2e7fed672ffbb299a8376ef6bcbe22d180"
+  },
+  {
+    "file": "assets/framerusercontent.com/ba02b29b109b0773975d9998.woff2",
+    "sha256": "68cf5b575705c54b915a806a6666344a65b010388b588311629a8009af66b87a"
+  },
+  {
+    "file": "assets/framerusercontent.com/0dd91035dd694b8051a0a52c.mjs",
+    "sha256": "cbd6fb213bb3c97c339530b88839ff2f9fb9a21dcaea2e673041241677665d88"
+  },
+  {
+    "file": "assets/framerusercontent.com/f34f1bd6bdecadf00f691542.jpg",
+    "sha256": "c48e5281297fadbb452cded508c0bc5e1802c152198a2c4aeb203a4a6f818721"
+  },
+  {
+    "file": "assets/framerusercontent.com/20c34ffd34dd10c66f98746a.mjs",
+    "sha256": "73fd16dcff97894c1afa6b7563f789d97539bcc7a2cd6b94b7cccdcfc2a52fff"
+  },
+  {
+    "file": "assets/framerusercontent.com/5ffd1a1e370c0a4b173f95d1.png",
+    "sha256": "48c7a400612eff78af662896e174338b3b6e8351e7b985cd53d1428050b48935"
+  },
+  {
+    "file": "assets/framerusercontent.com/08433d32f137c40b4538acd5.avif",
+    "sha256": "ecd66a166a9a9125b6b65a890f639ae0f6a9ec937fba45578459c388811e5699"
+  },
+  {
+    "file": "assets/framerusercontent.com/e0048950fd747310dcd5a155.jpg",
+    "sha256": "2264d976bd18f78f953d7c9307ce936df4bf2ce761dd7892a18689503cc7f9e8"
+  },
+  {
+    "file": "assets/framerusercontent.com/5594c72727ccc0ba2e1b4361.woff2",
+    "sha256": "9db34707de1cc86da27ad2a92d2279ccb515cb870ae3c1978a69c47e0bfd0dc0"
+  },
+  {
+    "file": "assets/framerusercontent.com/c45677857998b11bc27bf5f0.png",
+    "sha256": "1232a51f5856208aee8971123ae4f02557528a03f5a3a74ba3280d534b0d7b8c"
+  },
+  {
+    "file": "assets/framerusercontent.com/a7dbf1f6f0878a3b9ec6d605.jpg",
+    "sha256": "3af74e852cb1cab4c2a09d9a1213397aef9361093fa3f8dfb514b7cbefc08660"
+  },
+  {
+    "file": "assets/framerusercontent.com/b9fc670378b67240f73e913e.mjs",
+    "sha256": "4185ff2b687b2658cff87d5afc21a862e3de9b92e4b2c45de48b99eed8396a36"
+  },
+  {
+    "file": "assets/framerusercontent.com/18cd142bd793158be9c0c24c.jpg",
+    "sha256": "7af1b94749c4ecc8f155513dc8b1638b78925c2109cbcdef0ff1c6b5030d1986"
+  },
+  {
+    "file": "assets/framerusercontent.com/d782a072d595ff29ba090c8e.mjs",
+    "sha256": "0956e1a095e03f543cad434f662ce7be40bd9b2fbee846675e4c1b217946376e"
+  },
+  {
+    "file": "assets/framerusercontent.com/e47ecbb517b9e94dce873461.avif",
+    "sha256": "f7810528c689a8e34587ea0e7864ae05b4e0ae463cdc72d1e2a2f2ab24ea7cd4"
+  },
+  {
+    "file": "assets/framerusercontent.com/754f786969e824b493fd310f.mjs",
+    "sha256": "0b23a3818e9365477026220baa327051ed3d737f70b56fe212012337d3532fcf"
+  },
+  {
+    "file": "assets/framerusercontent.com/d9fa6dd85651766f3f9e5706.mjs",
+    "sha256": "a1bc9e5f06c0a58f641856f012c5e58fe9a5221b4169cca463fbc7678a0f4328"
+  },
+  {
+    "file": "assets/framerusercontent.com/733a9f8c2637f91b4e4ab680.mjs",
+    "sha256": "e54b820776f03ad14ddd5bcabdaf60513ca06c56895b95f7ca219385b86f160b"
+  },
+  {
+    "file": "assets/framerusercontent.com/b6c51ee07416f4592423537c.jpg",
+    "sha256": "12dc8b2912555f6e29476bf0cbabe4f349418363b953b5b2c8dd5eb1bd2880c2"
+  },
+  {
+    "file": "assets/framerusercontent.com/8b009bbdb40fdb2a701b8f3e.mjs",
+    "sha256": "5da9f9d02109fa8376512c77edd803eee14b8b023fb176506f07566dd9a8d4ba"
+  },
+  {
+    "file": "assets/framerusercontent.com/f9facdd8169a4f343a8a7512.png",
+    "sha256": "6c93783db0f3198643299829050409809c51e11c1b66085151eefb8042b0b3c4"
+  },
+  {
+    "file": "assets/framerusercontent.com/b583ff57131a6d7179c739e4.jpg",
+    "sha256": "150ce4cf1b936872f627fe8a76718dca713a368617e13ba8a076ca50d97df0a7"
+  },
+  {
+    "file": "assets/framerusercontent.com/a2edd7a2dd47abaaf888e6a8.avif",
+    "sha256": "ae69009be3cd76b83bafe7088dcc7b376f849b268c08fdbc6aed80fd55f7e529"
+  },
+  {
+    "file": "assets/framerusercontent.com/379b4f3c92d996d0824152b0.jpg",
+    "sha256": "b49e790dbb5763f3715f63e637d4f2fed663997e936e40ef47ecab36a26d0401"
+  },
+  {
+    "file": "assets/framerusercontent.com/ca8668a7f5e7de4a7bf8b3a7.png",
+    "sha256": "9824417065006570509eca6f62142902ede3c63fca87f298c6aa827b033013c7"
+  },
+  {
+    "file": "assets/framerusercontent.com/f1e42fd84c98bb4018c87707.avif",
+    "sha256": "dccbe62aa649a29134e7b020ed642ca8d7623cf6df0196e1f4d6c8538f6355a5"
+  },
+  {
+    "file": "assets/framerusercontent.com/c78f26fb8399e207f0566825.mjs",
+    "sha256": "d9ad65eb290eb097584e10d7945d4f2771ecf60136ceff4444130453688c5a9e"
+  },
+  {
+    "file": "assets/framerusercontent.com/cffaa4049a7804799e4146a5.avif",
+    "sha256": "b6efd97b312f7f56cb533fa176150cdbb362b44b5bdf55a4a496a555386d9ef4"
+  },
+  {
+    "file": "assets/framerusercontent.com/24526011253e24a6171be7fa.png",
+    "sha256": "545b09315da51f346b785c5caa883d97a46ec464018e29f67a96205c65d1845b"
+  },
+  {
+    "file": "assets/framerusercontent.com/41c2ea78da3d888760695e57.jpg",
+    "sha256": "0dad341bd7baeda8f8e0f2dced3abd36e800b642259c023a6bd02ec88b42b5c4"
+  },
+  {
+    "file": "assets/framerusercontent.com/a095c74bb0b8a4691d8c1bc8.png",
+    "sha256": "a52e1a4fb1a0062660242dd117c2ee9142eb497d56bd5ec17a16779cc722e14b"
+  },
+  {
+    "file": "assets/framerusercontent.com/85bc2472b173e1c08845607f.jpg",
+    "sha256": "e6953155b7c6fe177b6524e495715cebf950fec175c7cc2bfbe56260f8b1bdc3"
+  },
+  {
+    "file": "assets/framerusercontent.com/61418a355f78855349d1acef.woff2",
+    "sha256": "4107b11930c4eef1f6ae5a76d441562e6d21a601f1781f37fd085542cd87412b"
+  },
+  {
+    "file": "assets/framerusercontent.com/e05d508e87b82e0105b33e24.jpg",
+    "sha256": "2f247189b14ce12d5bd670d2d4c3e9f8c6c31c15a49a8b40a819f7e5c7acd1eb"
+  },
+  {
+    "file": "assets/framerusercontent.com/aab6c28e68e96bd7540f1ef3.avif",
+    "sha256": "9624c5327339ec8cef5b970230cf5971a02df9bb693c8daa44cc748bae0a92d6"
+  },
+  {
+    "file": "assets/framerusercontent.com/aa3809039f5a82dc2f229d25.json",
+    "sha256": "e97fcd1c3d9f3e3846b209c21fe7c50fd7aed9905d71b1151304b4f565a4c9ec"
+  },
+  {
+    "file": "assets/framerusercontent.com/b7bcaf4d3812f98064e0f547.woff2",
+    "sha256": "09d4eb010bb9140289383ee337ac5775b8caf7a830113cfbb071134bf2a354cb"
+  },
+  {
+    "file": "assets/framerusercontent.com/f4e8b64d883bdc6433f6a179.mjs",
+    "sha256": "0eaf6c304e0327aa6c1df6d9f33258eed1e5c387ae928a0c25cb2cedbfa46b63"
+  },
+  {
+    "file": "assets/framerusercontent.com/12e83545c455d886f0604cbc.mjs",
+    "sha256": "d7dd05a0a24a7eb2d50af7134733b85cd20ff02d647dbef7edca89c682ac7f09"
+  },
+  {
+    "file": "assets/framerusercontent.com/a851fe9f58af18c84c5da16f.jpg",
+    "sha256": "8056336d44faf99425c5c4d8d45fd6168c12ad719ee0f555f5a16541d655efe7"
+  },
+  {
+    "file": "assets/framerusercontent.com/aea1c365f82cf0a8644e41b5.avif",
+    "sha256": "cefd52c2309a3c82ed0ce0cdf6325f1915467de8f61f06862362820788e04152"
+  },
+  {
+    "file": "assets/framerusercontent.com/54aeec69ecf1a4dfbbea5a6f.mjs",
+    "sha256": "ef6583bac252f4ca1fb66b8786cd725572150a5e7fa3e46754d8c4341c61861f"
+  },
+  {
+    "file": "assets/framerusercontent.com/625db3980b4570324a06432c.mjs",
+    "sha256": "93b8a1caf3c7276b9de48bb6aad239006547cbb1be67da0a502f667ac2fabba3"
+  },
+  {
+    "file": "assets/framerusercontent.com/79cc69148c964e210a091b37.woff2",
+    "sha256": "35f2295aefa1828e2eb026527d9e946eac60c726f06f66a9b61d047a8183c30a"
+  },
+  {
+    "file": "assets/framerusercontent.com/b94bba962e2412cb54f1294d.png",
+    "sha256": "cd546a0ca3d8655c0459659d01cb487e26c22f78bf05aa278c430233c39f1f58"
+  },
+  {
+    "file": "assets/framerusercontent.com/61d68037a2fc959e77ec0db4.png",
+    "sha256": "8684eca0e4616cddd074f7dfac275b83fc9f39b106daa078bf68488cacfdf536"
+  },
+  {
+    "file": "assets/framerusercontent.com/0cdb6a6ecb3a70ce54ff888d.woff2",
+    "sha256": "236c5e2c38b6d82dd2b4258d6bf24b179dabbcafcb16e845ad7e677332b72882"
+  },
+  {
+    "file": "assets/framerusercontent.com/38ccd7021df5669847bf3cb5.mjs",
+    "sha256": "55e8ea1a18c279daa3358ee5a0f5e8080719eb0566beb02adf0e991003586140"
+  },
+  {
+    "file": "assets/framerusercontent.com/ced977869694b49d9dbc69b5.mjs",
+    "sha256": "1e585d349afa9bc9efd66a9ea40d6e4cc273d16bdad1143355bba0b95f25879b"
+  },
+  {
+    "file": "assets/framerusercontent.com/65cb6a43f697d97cbf9df83f.png",
+    "sha256": "e50a39401fb681d8f93f813dd866abe9094b9a8b6a3595c341c3df2f6f2ed2a4"
+  },
+  {
+    "file": "assets/framerusercontent.com/38402b1f41695538401c7fc0.png",
+    "sha256": "319df8c3e1253235a61bc220bb501b953e36b4dfa98871f9a449c8aafdaa4905"
+  },
+  {
+    "file": "assets/framerusercontent.com/ad4080f431acaed2bbad7d42.webp",
+    "sha256": "228f96ebf9be9d649827127fc7eb633e6b4854313c0053c036eb7a5bf26cd396"
+  },
+  {
+    "file": "assets/framerusercontent.com/0c089940c6ec5a6c9df73e74.woff2",
+    "sha256": "992c5fd3bac230fa179ce0d63f6c032bc08d28678771173cb057e91d0cdde997"
+  },
+  {
+    "file": "assets/framerusercontent.com/6de0f6525411ab07bb62d0be.avif",
+    "sha256": "1e665e2cca894623f589a4afe363bf71dd61f05e1fc6de28f2b5ebd35079a60f"
+  },
+  {
+    "file": "assets/framerusercontent.com/18dd5cffb36f046b2825dc58.woff2",
+    "sha256": "be1a6fa7f51ee9e020bdac48d7bdf07f75233473827cf7a66a3d09b15bb5a49d"
+  },
+  {
+    "file": "assets/framerusercontent.com/5fc24410287d01efa3b815e9.jpg",
+    "sha256": "1c8fc24af68b8d419db287174f035e5b869590536c594327f57bc8981cce823f"
+  },
+  {
+    "file": "assets/framerusercontent.com/5c0e3b52cac38fe6dccdff7e.jpg",
+    "sha256": "b61e4d4317b60f6b32509a9b137ff43991b95da3d00cb8fce01ec4f234c91476"
+  },
+  {
+    "file": "assets/framerusercontent.com/028ac5a8403106bd2c672aec.png",
+    "sha256": "c83e0eb8da5293e676849ff4544a4655e6a7e783afa1ae7a17f484f98ae9f79c"
+  },
+  {
+    "file": "assets/framerusercontent.com/72a55d2ba254ea7b4c048a18.webp",
+    "sha256": "4d32074129ae66a7da6256fb06bf11a3e008d7c49eca4ac976b5d1ec5e8c464f"
+  },
+  {
+    "file": "assets/framerusercontent.com/c4e341019a8b8b7585e9e31e.png",
+    "sha256": "c0fb34941ff68917098ea1872ed2319c41308c255616c0e0a8d699da96b59c69"
+  },
+  {
+    "file": "assets/framerusercontent.com/f30510acb66c7fda8d522825.mjs",
+    "sha256": "22ed83667c112cdfd07e0f7b55bd5319447ec09ee1752ff010be07dde4ded665"
+  },
+  {
+    "file": "assets/framerusercontent.com/70a74d0dcda273266c340872.avif",
+    "sha256": "b62ae6029acba6fdacabf778e9f1ee8f0eee02a70284de3e243cc971a2ad88eb"
+  },
+  {
+    "file": "assets/framerusercontent.com/79ff20345f9c19c3253b5332.avif",
+    "sha256": "ef1be9bb61beff33df4f3c8aca8c0c08534a85124165d4f62c831d510dd5fb4c"
+  },
+  {
+    "file": "assets/framerusercontent.com/92dd49762d95327210e96846.mjs",
+    "sha256": "a66f8b1402b6d1f00941501fbe8939ae3b85ce4aecd76c3842a8619f6a4804e7"
+  },
+  {
+    "file": "assets/framerusercontent.com/d8c3d066cf3bbc928459c1d1.woff2",
+    "sha256": "3b65ffb4188b763b66aa4300c9131de2b3d6c0d0fdbffea3e63a2ccc7f174a40"
+  },
+  {
+    "file": "assets/framerusercontent.com/eadeb791ce13869498561399.jpg",
+    "sha256": "ee31952962e3b9e0118a77e50fefb7a56653b36a5aa3977e1df86e568a0759a2"
+  },
+  {
+    "file": "assets/framerusercontent.com/99bb628ff6cd3e71e1d0af5d.jpg",
+    "sha256": "9d92e54ade5b7a98098f1cf1cca6dd6b8ed87ba73f48854ed87d48f5d2aa38a1"
+  },
+  {
+    "file": "assets/framerusercontent.com/130dad3feefccb79744b1e15.avif",
+    "sha256": "70dfc860dd7fee1ff7fa4aea43b2f3b3439ef32ea37b5d9696b58b2b93177743"
+  },
+  {
+    "file": "assets/framerusercontent.com/13550d8ca5fde39041d6b8ac.woff2",
+    "sha256": "2d3bec40b65f99387f999ecfdde3e0332485d141f0690c529d7a050287f60a5d"
+  },
+  {
+    "file": "assets/framerusercontent.com/8c12129d750b78288be7247e.mjs",
+    "sha256": "0dbcf39447a7aba19693e883ce2a3b7b2e413a55151aa08127fc8ac80f536f1a"
+  },
+  {
+    "file": "assets/framerusercontent.com/29ec2a1bd449544cfa13c869.woff2",
+    "sha256": "8d68edfec2489a4cf7478dfeb1bceae1d4661fe42d887ec5e01e5e3f0e12d2fd"
+  },
+  {
+    "file": "assets/framerusercontent.com/5d23b4b79293b727373afc45.avif",
+    "sha256": "f370c02d7bc00f41ac170c6247a25c1e1a5d135e61b1e26f004fd77a5065495a"
+  },
+  {
+    "file": "assets/framerusercontent.com/d84988c361aa82fa7578fdba.woff2",
+    "sha256": "21cdc19e523abd29a66a53b3f459fe741b855f8308d79964ed3638b6f9356dcc"
+  },
+  {
+    "file": "assets/framerusercontent.com/4c86f3b7cb5dce5ccb310c67.avif",
+    "sha256": "aacdcfa8f8c4a79c89056595c864e02268f2d12ba592d97bc07975f899eac2e3"
+  },
+  {
+    "file": "assets/framerusercontent.com/7b3322b4c9929c3696a336ce.mjs",
+    "sha256": "965f5cbde5bfa411e411bdf7545b3c89acd00fce0ca15a618a86fed9ac158f7d"
+  },
+  {
+    "file": "assets/framerusercontent.com/9ff8dcdda4aa7fd236dc6ec6.png",
+    "sha256": "a83ae9df1c6d42a452980901145717aafc6a932312b7f3d1868763418343e676"
+  },
+  {
+    "file": "assets/framerusercontent.com/d1c6dcd8ae666e35bb18930c.avif",
+    "sha256": "5b2fa62de78c403be93f744f394bebc25c617f36b12ba7ff933a1eafe3cb3ed9"
+  },
+  {
+    "file": "assets/framerusercontent.com/8a7f16a7f02ff52a79cb8b7b.png",
+    "sha256": "a14b154db21aa1177c804cf2dde7e022b2473c83cf9bcf87154b639721d64aac"
+  },
+  {
+    "file": "assets/framerusercontent.com/5a21203e418054b7d0e6782c.avif",
+    "sha256": "c53669ef6d857ce99d754dc872a279d70a4f0e10a2145b0d82460c5978abd3c0"
+  },
+  {
+    "file": "assets/framerusercontent.com/d00f6f1e5f059f8bdfffc38f.mjs",
+    "sha256": "4885b7c711b37e9ee3eb1aef0d9a2867d4fc0cdd6957024bc8629064a43eb3c1"
+  },
+  {
+    "file": "assets/framerusercontent.com/04dc708738fa7d6e33bd33e6.png",
+    "sha256": "888732616c14ca5f174d6ce34cc6f330c9e09bc2a97c3944c4ea812269f5f681"
+  },
+  {
+    "file": "assets/framerusercontent.com/4d9e1779d1181ce6c353d30e.mjs",
+    "sha256": "6ddc101a59715b6c958bb165043f254aeeb1239e5f00de35112aaee98b97db35"
+  },
+  {
+    "file": "assets/framerusercontent.com/efdf5d86df2291b474945000.avif",
+    "sha256": "0331ca9cd3b2ecd9d9e818a96ea04a63af27dce67e98c7e2d7d5015ebd3e18b7"
+  },
+  {
+    "file": "assets/framerusercontent.com/cc0a798ec092ab2d58ff6eb3.avif",
+    "sha256": "d783cd8c939d40d15d46b01fc8c0485ae354a94228a95d3756b6fa7a14c7c631"
+  },
+  {
+    "file": "assets/framerusercontent.com/bb78ccb04c7d6fe3a958ade8.woff2",
+    "sha256": "34ef391e3b2bb8cef583e01523e29bf13dd558cffb91368114087badcce116d6"
+  },
+  {
+    "file": "assets/framerusercontent.com/ff90eb6b49b20fa1507be0f7.png",
+    "sha256": "46547ce3867943f42191136cf3da5677d93da36cd23ea377a8606a5f26e39abb"
+  },
+  {
+    "file": "assets/framerusercontent.com/7f90c0d16f4abd1a9e690340.woff2",
+    "sha256": "fa6a61a8262fb38f129185fb97e8480380ae6e6327b6ee1760d559df5dc2d5d1"
+  },
+  {
+    "file": "assets/framerusercontent.com/921bdc5a29cd3ec681fd1764.avif",
+    "sha256": "67f45e30bfde753ce30adf783848ad84d94bdcd56ce42d81811b91318029dd2c"
+  },
+  {
+    "file": "assets/framerusercontent.com/efe85fbc8c44165275451236.avif",
+    "sha256": "c3891edca0fa297b3af27d98e8e8c844f82e42883ed624114c5d797039f3f0ea"
+  },
+  {
+    "file": "assets/framerusercontent.com/829cbb505e078f5e1c93829c.woff2",
+    "sha256": "45604c5c98fe3f13488e1d0ebfdd3cfe21d4222ed1426afa680ada83a5f8a4a7"
+  },
+  {
+    "file": "assets/framerusercontent.com/7f9cb326772a063798b4d8f1.svg",
+    "sha256": "d206847b7cc8ff3b8b677d7c2f54fb2ec5d68333c7b5da9f755c77f6f033b124"
+  },
+  {
+    "file": "assets/framerusercontent.com/a6b4f552f03b55b649c24550.mjs",
+    "sha256": "40052d4860cb28dd51430e04d83e501d9f5d9477da068dae8be15101a748bc17"
+  },
+  {
+    "file": "assets/framerusercontent.com/8d44bc9696caad172d1da6d5.mjs",
+    "sha256": "d32d88efbd0f672d6bcbf84d6c2c14f261a387418d0ebeffb5d0b4a2c501de3b"
+  },
+  {
+    "file": "assets/framerusercontent.com/afbc4e7e1a021320bec20206.avif",
+    "sha256": "ae441cd642f361fa1d1fb6f9a9e827800a85c269087963bf85f2e31bbb06f14d"
+  },
+  {
+    "file": "assets/framerusercontent.com/a2d10654f38ef4ce1f8798fd.jpg",
+    "sha256": "3af74e852cb1cab4c2a09d9a1213397aef9361093fa3f8dfb514b7cbefc08660"
+  },
+  {
+    "file": "assets/framerusercontent.com/eeec5b5bd09f3ada87624500.avif",
+    "sha256": "3bd491f59cd98f41cfc196f4d9f3f3b828221dece6a9c607bb5be79cbd3dd8b2"
+  },
+  {
+    "file": "assets/framerusercontent.com/b82ba147541aff3243efe779.mjs",
+    "sha256": "c33b0c709a1f243899b63195cf225e92b6e62deea73cfcd1b6122ac38f1d29dd"
+  },
+  {
+    "file": "assets/framerusercontent.com/9b477f352fe32a876a1167cd.mjs",
+    "sha256": "050f5ea772d8ab2e113b45807b46291d4332132a83a87194124b749ec496962f"
+  },
+  {
+    "file": "assets/framerusercontent.com/6f7267958b0d7e4217e8e2d4.png",
+    "sha256": "7275145bc092bea537644589b0f2cb62b8ccd5b2a0b8e343c21dc278bd334784"
+  },
+  {
+    "file": "assets/framerusercontent.com/c0215d82c6dd9ed22bfc6eff.woff2",
+    "sha256": "c0d105ab64a098680ba890a66228a54c03533d907c2812be8f09740772b6d349"
+  },
+  {
+    "file": "assets/framerusercontent.com/4c7778edc8ca1cb17e54a03c.woff2",
+    "sha256": "43cf206edf89348171df529aac13738dd2155528d009cb72ef283390623058bd"
+  },
+  {
+    "file": "assets/framerusercontent.com/af20f898a9a6c5a0d785d0cd.woff2",
+    "sha256": "202918a79e7bb02d71efa26cae71a84e2e56f3b8a104f65bbe26085670cc5e73"
+  },
+  {
+    "file": "assets/framerusercontent.com/55a5714064f62aeefb90823e.mjs",
+    "sha256": "f0bfb15b0d06314de7b4df94d1e9fabe4f37f82bcc9e6b66f73d09b601ac8005"
+  },
+  {
+    "file": "assets/framerusercontent.com/39874444e1b09902b3d50d5d.woff2",
+    "sha256": "e4c1617fc03c70ebd01de8794e138ffd118a0a1965c2bbd74eb85bfbac35cadb"
+  },
+  {
+    "file": "assets/framerusercontent.com/3d473effb90fe382890c2182.woff2",
+    "sha256": "c27061722a1d68ddf9ff8767d7f434058e56bbd2ff6a9188b1215a44a75fbda3"
+  },
+  {
+    "file": "assets/framerusercontent.com/dd0c4c61c3b7efeb5934542f.jpg",
+    "sha256": "6ae258e5fadee1d5b1e784d23dd68714ade9418eb915692176d005d976cda1b6"
+  },
+  {
+    "file": "assets/framerusercontent.com/0dd1bb04ad06400c13a00a00.mjs",
+    "sha256": "68c57d10511448c7a41cb2c10ea7416ce0a7cf5c78155ebc18225d087931df3e"
+  },
+  {
+    "file": "assets/framerusercontent.com/1f3e1827f7fa5bacb43d107a.woff2",
+    "sha256": "a83d6869a7a608286201edcfdb78bcfbc0a673c6074d16b3e144bd63f42434a3"
+  },
+  {
+    "file": "assets/framerusercontent.com/63b4ea11fddbd9e8e2183b52.png",
+    "sha256": "2192a066e02775955f93f752c62623b49d9a2329b5c3511422803057529967d1"
+  },
+  {
+    "file": "assets/framerusercontent.com/a28b490248ee4bf530173056.jpg",
+    "sha256": "bc34cc901c21cfaf10c15a6c69c67d18dd3992d76ed77d8709678b59b1c39cd3"
+  },
+  {
+    "file": "assets/framerusercontent.com/1b7d2443716c81f922ff69a7.mjs",
+    "sha256": "c03a6b5d45bdc40f5d3bbc6ef363dec27377157023699332d0e2b05d54b5b8e5"
+  },
+  {
+    "file": "assets/framerusercontent.com/bdcf4e44d90c5cc0217b21a1.woff2",
+    "sha256": "52d518599e326f2a7bc668afc1ad095b22b71687aba9e6f1866ccbaad634fca5"
+  },
+  {
+    "file": "assets/framerusercontent.com/315ac781d557ac9dded7ed8a.json",
+    "sha256": "47067a91fad8e734d742c8bcf4aa0c3563463539d84d6be847240d3ff9315d1e"
+  },
+  {
+    "file": "assets/framerusercontent.com/ea251f846103d7436b9cac7a.mjs",
+    "sha256": "91cb1aafda24dd1951c9b135c6af119acefe45d64575b04247d716b590f6a303"
+  },
+  {
+    "file": "assets/framerusercontent.com/2ca7f64738741418251f5d74.woff2",
+    "sha256": "7f9d8e2207cc6b4bd89c20cef9742c05f04093aa8d2a92b1d0c4bf93663145af"
+  },
+  {
+    "file": "assets/framerusercontent.com/a8b12074809ae1e25704766b.woff2",
+    "sha256": "806ba2d7921651e6d9b1da8aac8745cab75d932a65aaa81f04faebb1ea249595"
+  },
+  {
+    "file": "assets/framerusercontent.com/f5679bd140c345da247ca33c.woff2",
+    "sha256": "9bed92e963c634e32445ddc792d62180fb8498a10d3f7c20a1e8d1e7de17adc4"
+  },
+  {
+    "file": "assets/framerusercontent.com/aba02741a571e35654223869.mjs",
+    "sha256": "85160988c663e2e795ca4fdad3460c1d4761731ae71635f1cd88ae5bec88d4d3"
+  },
+  {
+    "file": "assets/framerusercontent.com/d26b343d0d0ed345240bb4dc.woff2",
+    "sha256": "a81a33090e1786c391a37f4cc930d180c492f9e0e3d27b567b65a99a25bf2cf9"
+  },
+  {
+    "file": "assets/framerusercontent.com/2ac09ab3b295b013c97cb49a.jpg",
+    "sha256": "e431949235a78429f42c08283d8dc9b295a8631645d3744fe7ec4ae265377231"
+  },
+  {
+    "file": "assets/framerusercontent.com/3afc1b5fef8677a3523772e8.mjs",
+    "sha256": "d053ebf11277f3e3021f975305477fc50514d8f700dff9fde66027c68319b4ae"
+  },
+  {
+    "file": "assets/framerusercontent.com/aa711445555e00933ea8e36f.avif",
+    "sha256": "afbb8594204fec0811f77fa607172a60a9effe8ed1e03d47c372c77882562b8b"
+  },
+  {
+    "file": "assets/framerusercontent.com/e20b170e00af0a816fc7b3e2.mjs",
+    "sha256": "d7afc93ac2fbdc95daf0082703d7dc634b65805b00be4a285142e844cbe7f537"
+  },
+  {
+    "file": "assets/framerusercontent.com/c5d6a225f811478265cef87e.mjs",
+    "sha256": "9baa15c764b3c833ecc4672cde946190096adf2940cc920bc4d2f3ff0791c1b8"
+  },
+  {
+    "file": "assets/framerusercontent.com/0b0382b862d252d3725fbc86.jpg",
+    "sha256": "dd0ffdb82e3e623c0d389266f884cb1d619325d716869f854fe403fd4b895ad1"
+  },
+  {
+    "file": "assets/framerusercontent.com/1f1f2cc180697dbd400e2948.woff2",
+    "sha256": "0648a0666c626b3afc7ebfd187e3704cfd4b1fa4d7f774a08af01236101daab9"
+  },
+  {
+    "file": "assets/framerusercontent.com/7f5d22dca694775a8d8f5968.png",
+    "sha256": "9d91671969ebf40e4f0fb36e50020a60136e6e40ac7d67a5b9e8a3fd7bf1d354"
+  },
+  {
+    "file": "assets/framerusercontent.com/e340c6acada33bd14e1981fc.woff2",
+    "sha256": "95a9e62cbe6b9d4c96b95bced1594c619d2e9b99793cd948bdd0a607e7ebd4f1"
+  },
+  {
+    "file": "assets/framerusercontent.com/e2f3aeecf0fbfd1de73e1aa7.woff2",
+    "sha256": "1ffe4077cf4c481f787eee22edaff1ef2085cb36b87b586921cc2c910baf14db"
+  },
+  {
+    "file": "assets/framerusercontent.com/ba8066fc54fae62174458c88.mjs",
+    "sha256": "fd4be86ac98c7407fb08365d7d50086785f60008d4890e577ccdfd31d1841bcf"
+  },
+  {
+    "file": "assets/framerusercontent.com/ec1e6f5f4c69b2df64425de4.jpg",
+    "sha256": "7c29d54f02d94a5860f6f801908267122c061e312fbd44303724176b65bbd138"
+  },
+  {
+    "file": "assets/framerusercontent.com/61768e4749997ab35d5e856d.jpg",
+    "sha256": "1a8f547012954e2c3df2715295e921a385f2ac152daf2f322aa4fad6c7024bf3"
+  },
+  {
+    "file": "assets/framerusercontent.com/288c988597e500379839b527.png",
+    "sha256": "88669a9a10ca737404066fced86a5d3db6359080e5485c2b0089a19a2a28ca82"
+  },
+  {
+    "file": "assets/framerusercontent.com/87b75880a6816843391955b7.avif",
+    "sha256": "79c680d0c71f4a464569c21ae5c1e72d8026d5342a35d74cf9bd625d36525793"
+  },
+  {
+    "file": "assets/framerusercontent.com/b6eb2230d6cbb92f3607fd54.png",
+    "sha256": "d0c40de8c0f29c2c7bd8bdd1c11207361057c17dea044c16e07c3fbfc7f8b01a"
+  },
+  {
+    "file": "assets/framerusercontent.com/9fb406d5bed8bdeed72fc420.mjs",
+    "sha256": "d4e9ea739f7606aa93f86b8c28531610757cbec6fa79e15505305a283e2e4d25"
+  },
+  {
+    "file": "assets/framerusercontent.com/72dcb10ad82d87f62ef31055.mjs",
+    "sha256": "a0b5e2293cd356e5ba8afa643eed11e417b25534a41cfe546a001e06c5e0d350"
+  },
+  {
+    "file": "assets/framerusercontent.com/461f564ff2cfff83c544c35d.jpg",
+    "sha256": "7c29d54f02d94a5860f6f801908267122c061e312fbd44303724176b65bbd138"
+  },
+  {
+    "file": "assets/framerusercontent.com/13213d45bfdd8a01a9e8223a.png",
+    "sha256": "8bc22af9ad1f01578def0027ea2fdec6d7f5d244382054767dc0ac9e0a64b4a7"
+  },
+  {
+    "file": "assets/framerusercontent.com/2b117465c0f61f46d71310bb.png",
+    "sha256": "a9a7bc2e01ac33d3a0e27c54dfe818ebb03dccb87d21d2177ce97acd97c74c77"
+  },
+  {
+    "file": "assets/framerusercontent.com/da8b49d2c52ccea7f2bc52c2.mjs",
+    "sha256": "a30b3ac0a3b06c59d8c7f1915bfc139a92893fad8f3d8f3a9ddca53479ac0546"
+  },
+  {
+    "file": "assets/framerusercontent.com/764ae370aa4ba7a0622cca5a.jpg",
+    "sha256": "9653f60bb5bf9af234cb6911475a8f1853aafe8e575db5c687bf2b321aadf972"
+  },
+  {
+    "file": "assets/framerusercontent.com/09b7bc12a26a8568f0071ac9.mjs",
+    "sha256": "5eb86d8465305b20b8305d2a69d12b12e82832f0695a97cbe526c815d9ddc3ea"
+  },
+  {
+    "file": "assets/framerusercontent.com/d342a0351181483e197f1b65.woff2",
+    "sha256": "af9fa49a46e2b4bb090462e8222f43b426593ce31aca150401aa8ebf5c5b5929"
+  },
+  {
+    "file": "assets/framerusercontent.com/3575ba56724263cebe86bb29.png",
+    "sha256": "a174affb882c3d6466e2ea5415cbad42cd76bf94ef8a9cbb00fea59aad2257f2"
+  },
+  {
+    "file": "assets/framerusercontent.com/84b9b86ff62f7e6cf3a21330.jpg",
+    "sha256": "7835e8f1da20d7d92b8e8e96655f1407daa63a76b1ff1eac41b37df750d4343f"
+  },
+  {
+    "file": "assets/app.framerstatic.com/e938e06402bbfea3a75f7bf3.mjs",
+    "sha256": "3c9470844fa3f89032fe8dbced8e25e4080bf8f4a1bcbe4c29bd60fbcdba64ec"
+  },
+  {
+    "file": "assets/app.framerstatic.com/a2d8ededd67529c81745ed4a.mjs",
+    "sha256": "3c00933bf8487d6c185974d3a74be207eba596a657717a73041f0b9e5e962202"
+  },
+  {
+    "file": "assets/app.framerstatic.com/0c62ea0fb52c03db576cb622.mjs",
+    "sha256": "e9fcc054a90d467a5e84aec529626df6717df030f262dcaa947a6f6dadf59073"
+  },
+  {
+    "file": "assets/app.framerstatic.com/7235694458a35b3ed356df72.mjs",
+    "sha256": "22b3909b7f54ba4cb78dd423bafa5f95e69fb9d134b56306536d5773ea6a8c08"
+  },
+  {
+    "file": "assets/app.framerstatic.com/d951976b5ca6bf853dd63656.mjs",
+    "sha256": "a66b0b6c9570b82570ac512cdcf0a6532a5554bd1fd85561d9ee571b67eb5127"
+  },
+  {
+    "file": "assets/app.framerstatic.com/e6de2216f2003f22754b90d6.mjs",
+    "sha256": "0cb787240346917d341c7b9194882cb4f342703b0516a58a334df33fc58da8fc"
+  },
+  {
+    "file": "assets/app.framerstatic.com/ae38471b4ec743c8d6daa22c.mjs",
+    "sha256": "adb77184a5ea5ae903006c75c4847f0642dc8e058201e84e483642138e5779fd"
+  },
+  {
+    "file": "assets/app.framerstatic.com/6c7d396cc31fba0fa7502308.mjs",
+    "sha256": "50531f032b4b2b872d1d64ece9b07e75c2140789a8f9206c2e884a33753639b6"
+  }
+]

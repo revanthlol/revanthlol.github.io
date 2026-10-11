@@ -1,0 +1,20 @@
+# Revanth
+
+I build web apps, browser tools and Linux utilities. Most of it is open source.
+
+## Pages
+- [Projects](https://revanthlol.github.io/projects/)
+- [Connect](https://revanthlol.github.io/contact/)
+
+## Projects
+- [LePrint](https://revanthlol.github.io/projects/leprint/): A QR-based print, scan and copy kiosk system with a web interface and a local printer agent.
+- [SlotForge](https://revanthlol.github.io/projects/slotforge/): An academic timetable app that models scheduling constraints and generates schedules with OR-Tools.
+- [cyclr](https://revanthlol.github.io/projects/cyclr/): A keyboard-driven tab switcher for Chromium and Firefox, with previews and configurable shortcuts.
+- [erp](https://revanthlol.github.io/projects/erp/): An unofficial interface for a college student portal, with attendance, results and profile views.
+- [typd](https://revanthlol.github.io/projects/typd/): A Wayland virtual keyboard with a draggable, resizable interface and on-screen key feedback.
+- [TextFX](https://revanthlol.github.io/projects/textfx/): An animated SVG text generator with per-line fonts, colors, timing and cursor controls.
+- [focusd](https://revanthlol.github.io/projects/focusd/): A Linux window-time tracker with local SQLite storage and support for Hyprland and X11.
+- [socialmesh](https://revanthlol.github.io/projects/socialmesh/): A community fork of Shoutrrr, an open source app for self-hosted social publishing and scheduling.
+- [omrealtor](https://revanthlol.github.io/projects/omrealtor/): A static website concept for a property advisory firm, with area guides, service pages and contact information.
+- [Fresh 360](https://revanthlol.github.io/projects/fresh360/): Website for Fresh 360, a Hyderabad drinks company I'm a business partner in. Three brands: Juicera, Fruizy and Fizzo.
+- [GILD (Great Indian Legal Diaries)](https://revanthlol.github.io/projects/gild/): Landing page for a podcast on Indian law and criminal justice.

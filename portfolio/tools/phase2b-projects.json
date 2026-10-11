@@ -1,0 +1,249 @@
+[
+  {
+    "slug": "leprint",
+    "name": "LePrint",
+    "category": "Web app",
+    "description": "A QR-based print, scan and copy kiosk system with a web interface and a local printer agent.",
+    "href": "/projects/leprint/",
+    "image": "/assets/projects/leprint.webp",
+    "language": "JavaScript",
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/LePrint"
+      },
+      {
+        "label": "Live site",
+        "href": "https://leprint.in/"
+      }
+    ],
+    "features": [
+      "QR-based document upload",
+      "Local printer and scanner agent",
+      "Print job status"
+    ]
+  },
+  {
+    "slug": "slotforge",
+    "name": "SlotForge",
+    "category": "Web app",
+    "description": "An academic timetable app that models scheduling constraints and generates schedules with OR-Tools.",
+    "href": "/projects/slotforge/",
+    "image": "/assets/projects/slotforge.webp",
+    "language": "TypeScript",
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/SlotForge"
+      },
+      {
+        "label": "Live site",
+        "href": "https://slotforge-main.vercel.app/"
+      }
+    ],
+    "features": [
+      "Scheduling constraints",
+      "Schedule generation with OR-Tools",
+      "Conflict inspection and schedule export"
+    ]
+  },
+  {
+    "slug": "cyclr",
+    "name": "cyclr",
+    "category": "Browser extension",
+    "description": "A keyboard-driven tab switcher for Chromium and Firefox, with previews and configurable shortcuts.",
+    "href": "/projects/cyclr/",
+    "image": "/assets/projects/cyclr.webp",
+    "language": "JavaScript",
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/cyclr"
+      },
+      {
+        "label": "Live site",
+        "href": "https://cyclrr.vercel.app/"
+      }
+    ],
+    "features": [
+      "Keyboard tab navigation",
+      "Tab previews",
+      "Configurable shortcuts"
+    ]
+  },
+  {
+    "slug": "erp",
+    "name": "erp",
+    "category": "Web app",
+    "description": "An unofficial interface for a college student portal, with attendance, results and profile views.",
+    "href": "/projects/erp/",
+    "image": "/assets/projects/erp.webp",
+    "language": "TypeScript",
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/erp"
+      },
+      {
+        "label": "Live site",
+        "href": "https://erp-la.vercel.app/"
+      }
+    ],
+    "features": [
+      "Attendance views",
+      "Results and profile views",
+      "Unofficial student portal interface"
+    ]
+  },
+  {
+    "slug": "typd",
+    "name": "typd",
+    "category": "Linux utility",
+    "description": "A Wayland virtual keyboard with a draggable, resizable interface and on-screen key feedback.",
+    "href": "/projects/typd/",
+    "image": "/assets/projects/typd.webp",
+    "language": "Rust",
+    "tags": [
+      "Work in progress"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/typd"
+      }
+    ],
+    "features": [
+      "On-screen Wayland keyboard",
+      "Draggable and resizable interface",
+      "On-screen key feedback"
+    ]
+  },
+  {
+    "slug": "textfx",
+    "name": "TextFX",
+    "category": "Developer tool",
+    "description": "An animated SVG text generator with per-line fonts, colors, timing and cursor controls.",
+    "href": "/projects/textfx/",
+    "image": "/assets/projects/textfx.webp",
+    "language": "TypeScript",
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/TextFX"
+      },
+      {
+        "label": "Live site",
+        "href": "https://textfxsvg.vercel.app/"
+      }
+    ],
+    "features": [
+      "Per-line fonts and colors",
+      "Typing, deletion and cursor controls",
+      "SVG export"
+    ]
+  },
+  {
+    "slug": "focusd",
+    "name": "focusd",
+    "category": "Linux utility",
+    "description": "A Linux window-time tracker with local SQLite storage and support for Hyprland and X11.",
+    "href": "/projects/focusd/",
+    "image": "/assets/projects/focusd.webp",
+    "language": "Rust",
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/focusd"
+      }
+    ],
+    "features": [
+      "Local SQLite window-time records",
+      "CLI reports and export",
+      "Hyprland and X11 support"
+    ]
+  },
+  {
+    "slug": "socialmesh",
+    "name": "socialmesh",
+    "category": "Web app",
+    "description": "A community fork of Shoutrrr, an open source app for self-hosted social publishing and scheduling.",
+    "href": "/projects/socialmesh/",
+    "image": "/assets/projects/socialmesh.webp",
+    "language": "PHP",
+    "tags": [
+      "Fork"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/socialmesh"
+      }
+    ],
+    "features": [
+      "Self-hosted social publishing and scheduling",
+      "Shared workspaces",
+      "Community fork of Shoutrrr"
+    ]
+  },
+  {
+    "slug": "omrealtor",
+    "name": "omrealtor",
+    "category": "Website",
+    "description": "A static website concept for a property advisory firm, with area guides, service pages and contact information.",
+    "href": "/projects/omrealtor/",
+    "image": "/assets/projects/omrealtor.webp",
+    "language": null,
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/omrealtor"
+      }
+    ],
+    "features": []
+  },
+  {
+    "slug": "fresh360",
+    "name": "Fresh 360",
+    "category": "Website",
+    "description": "Website for Fresh 360, a Hyderabad drinks company I'm a business partner in. Three brands: Juicera, Fruizy and Fizzo.",
+    "href": "/projects/fresh360/",
+    "image": "/assets/projects/fresh360.webp",
+    "language": null,
+    "tags": [],
+    "links": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/revanthlol/fresh360"
+      },
+      {
+        "label": "Live site",
+        "href": "https://fresh360.vercel.app/"
+      }
+    ],
+    "features": []
+  },
+  {
+    "slug": "gild",
+    "name": "GILD (Great Indian Legal Diaries)",
+    "category": "Website",
+    "description": "Landing page for a podcast on Indian law and criminal justice.",
+    "href": "/projects/gild/",
+    "image": "/assets/projects/gild.webp",
+    "language": null,
+    "tags": [],
+    "links": [
+      {
+        "label": "Live demo",
+        "href": "https://gild-two.vercel.app"
+      }
+    ],
+    "features": []
+  }
+]

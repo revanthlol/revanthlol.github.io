@@ -1,0 +1,413 @@
+[
+  {
+    "name": "aj",
+    "description": null,
+    "language": "Java",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-10-01T05:46:15Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "ajfp",
+    "description": null,
+    "language": "HTML",
+    "topics": [],
+    "homepage": "https://ajfp.vercel.app",
+    "pushed_at": "2026-10-03T16:54:00Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "ajpp",
+    "description": null,
+    "language": "Java",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-09-16T14:40:07Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "ani-wp",
+    "description": null,
+    "language": "HTML",
+    "topics": [],
+    "homepage": "https://gallery-wp.vercel.app/",
+    "pushed_at": "2026-09-04T13:14:06Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "cyclr",
+    "description": "A minimal tab switcher for chromium browsers",
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://cyclrr.vercel.app",
+    "pushed_at": "2026-06-08T01:25:42Z",
+    "fork": false,
+    "stars": 1
+  },
+  {
+    "name": "DietDost",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://dietdost.vercel.app/",
+    "pushed_at": "2026-06-28T01:52:32Z",
+    "fork": true,
+    "stars": 0
+  },
+  {
+    "name": "dots-hyprland",
+    "description": "a custom fork of end-4's dots customized according to my preferences",
+    "language": "QML",
+    "topics": [
+      "archlinux",
+      "dots",
+      "hyprland",
+      "hyprland-arch",
+      "hyprland-config",
+      "hyprland-dotfiles",
+      "rice"
+    ],
+    "homepage": "",
+    "pushed_at": "2026-06-18T12:31:58Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "ecotracker",
+    "description": "A Carbon Footprint Tracker",
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://ecotracker-nu.vercel.app",
+    "pushed_at": "2026-01-25T08:25:26Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "edu-track",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://edu-track-dbms.vercel.app",
+    "pushed_at": "2026-02-22T03:02:59Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "emw",
+    "description": "A modern event management system",
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://emw-navy.vercel.app",
+    "pushed_at": "2026-03-06T08:56:17Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "erp",
+    "description": "A better UI of my college student portal(which is trash)",
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://erp-la.vercel.app/",
+    "pushed_at": "2026-09-27T07:09:22Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "focusd",
+    "description": "a lightweight, daemon-style CLI tool for Linux that tracks focused window time to help you understand where your attention goes.",
+    "language": "Rust",
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2026-04-27T09:06:11Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "fresh360",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://fresh360.vercel.app",
+    "pushed_at": "2026-10-08T01:51:09Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "gallery",
+    "description": "wallpaper gallery",
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://gallery-wp.vercel.app/",
+    "pushed_at": "2026-09-04T13:22:37Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "goon",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://goon-gold.vercel.app",
+    "pushed_at": "2025-07-23T07:48:42Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "GPA",
+    "description": "Personal GPA calculator ",
+    "language": "HTML",
+    "topics": [],
+    "homepage": "https://gpa-lemon.vercel.app",
+    "pushed_at": "2026-01-25T11:44:08Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "gymerp",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://gymerp-liard.vercel.app",
+    "pushed_at": "2026-09-17T12:46:11Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "inkly",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-04-27T09:06:47Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "kinet",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://kinet-sim.vercel.app",
+    "pushed_at": "2026-02-09T01:03:20Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "kitchen-bots-dashboard",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-09-23T02:51:57Z",
+    "fork": true,
+    "stars": 0
+  },
+  {
+    "name": "kitchen-bots-ecommerce",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-10-02T06:40:30Z",
+    "fork": true,
+    "stars": 0
+  },
+  {
+    "name": "LePrint",
+    "description": "A cloud-based print, scan, and xerox kiosk system. ",
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://LePrint.in",
+    "pushed_at": "2026-09-16T03:51:53Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "maze-bullet-fighter",
+    "description": null,
+    "language": null,
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-03-03T02:59:41Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "omrealtor",
+    "description": null,
+    "language": "HTML",
+    "topics": [],
+    "homepage": "https://omrealtor.vercel.app",
+    "pushed_at": "2026-09-29T12:47:52Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "pi-agent",
+    "description": null,
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-02-24T07:27:23Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "revanthlol",
+    "description": "Config files for my GitHub profile.",
+    "language": null,
+    "topics": [
+      "config",
+      "github-config"
+    ],
+    "homepage": "https://github.com/revanthlol",
+    "pushed_at": "2026-09-04T14:27:07Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "revanthlol.github.io",
+    "description": "a sneaky TUI portfolio",
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://revanthlol.github.io/",
+    "pushed_at": "2026-03-10T00:39:00Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "room-organizer",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-03-22T16:35:48Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "slingrift",
+    "description": "Sling Puck is a digital adaptation of the physical \"Fast Sling Puck\" board game. Two players compete simultaneously on a shared board, each trying to shoot all their pucks through a hole in the central divider to the opponent's side. The first player to completely clear their side wins.",
+    "language": null,
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-05-16T14:50:43Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "SlotForge",
+    "description": null,
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "https://slotforge-main.vercel.app",
+    "pushed_at": "2026-08-31T14:34:23Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "sms",
+    "description": null,
+    "language": "Java",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-08-22T15:00:00Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "socialmesh",
+    "description": null,
+    "language": "PHP",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-10-09T17:05:30Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "spoo",
+    "description": "spoo.me is a open-source & API first link management infra",
+    "language": null,
+    "topics": [],
+    "homepage": "https://spoo.me",
+    "pushed_at": "2026-03-29T13:59:58Z",
+    "fork": true,
+    "stars": 0
+  },
+  {
+    "name": "TagCam",
+    "description": null,
+    "language": "Kotlin",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-09-01T15:51:31Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "TextFX",
+    "description": "Inspired by TypingSVG \u2014 rebuilt and improved.",
+    "language": "TypeScript",
+    "topics": [],
+    "homepage": "textfxsvg.vercel.app",
+    "pushed_at": "2026-09-06T08:23:19Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "TryonKit",
+    "description": "Real-time virtual jewellery try-on",
+    "language": "JavaScript",
+    "topics": [],
+    "homepage": "https://tryon-kit-server.vercel.app",
+    "pushed_at": "2026-04-27T09:08:13Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "typd",
+    "description": "a Wayland virtual keyboard",
+    "language": "Rust",
+    "topics": [],
+    "homepage": "",
+    "pushed_at": "2026-05-03T02:13:10Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "wallpapers",
+    "description": "a bunch of wallpapers",
+    "language": null,
+    "topics": [],
+    "homepage": "https://gallery-wp.vercel.app/",
+    "pushed_at": "2026-09-04T13:12:02Z",
+    "fork": false,
+    "stars": 1
+  },
+  {
+    "name": "wt",
+    "description": "a lazy dump of my web tech lab ",
+    "language": "HTML",
+    "topics": [],
+    "homepage": "https://wt-pt.vercel.app",
+    "pushed_at": "2026-04-03T04:14:42Z",
+    "fork": false,
+    "stars": 0
+  },
+  {
+    "name": "yazi-config",
+    "description": null,
+    "language": "Lua",
+    "topics": [],
+    "homepage": null,
+    "pushed_at": "2026-06-28T12:08:55Z",
+    "fork": false,
+    "stars": 0
+  }
+]

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>rev@portfolio</title>
+
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="embed.css"><meta name="robots" content="noindex">
+</head>
+<body>
+
+<canvas id="matrix-canvas"></canvas>
+<div id="matrix-exit-hint">[ press any key or click to exit ]</div>
+<canvas id="pipes-canvas"></canvas>
+<div id="pipes-exit-hint">[ pipes screensaver · press any key or click to exit ]</div>
+<div id="sl-stage"><pre id="sl-train"></pre></div>
+
+<div class="window" id="win">
+  <div class="titlebar" id="titlebar">
+    <span class="dot r" id="dot-r" title="close"></span>
+    <span class="dot y" id="dot-y" title="minimise"></span>
+    <span class="dot g" id="dot-g" title="maximise"></span>
+    <span class="win-title" id="win-title">rev@portfolio</span>
+    <span class="sound-toggle" id="sound-toggle" title="toggle typing sounds">off</span>
+  </div>
+  <div class="terminal-body" id="tb">
+    <div id="output"></div>
+    <div class="input-row" id="input-row">
+      <span class="pu" id="prompt-user">rev@portfolio</span><span class="pp" id="prompt-path">:~</span><span class="pd">&nbsp;$&nbsp;</span>
+      <input id="cmd-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+    </div>
+  </div>
+</div>
+
+<footer id="footer">Type help for commands. Tab completes text; an empty prompt lets Tab leave the terminal.</footer>
+<script type="module" src="script.js"></script>
+</body>
+</html>
