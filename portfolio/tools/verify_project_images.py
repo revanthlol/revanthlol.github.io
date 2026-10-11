@@ -16,12 +16,14 @@ with sync_playwright() as p:
    rest=read();page.screenshot(path=str(ROOT/f'tools/images-rest-{width}-{route=="/"}.png'))
    assert rest['width']==1600
    if width>=810:
-    assert 'grayscale(1)' in rest['filter'] and 'blur(18px)' in rest['filter']
-    card.hover();page.wait_for_timeout(1000);hover=read();assert hover['filter']=='none' and hover['opacity']=='1'
+    assert rest['filter']=='grayscale(1)' and rest['opacity']=='1'
+    card.hover();page.wait_for_timeout(200);assert 'blur(' in read()['filter'];page.wait_for_timeout(1000);hover=read();assert hover['filter']=='none' and hover['opacity']=='1'
     page.screenshot(path=str(ROOT/f'tools/images-hover-{width}-{route=="/"}.png'))
     page.mouse.move(0,0);card.focus();page.wait_for_timeout(1000);assert read()['filter']=='none'
    else:assert rest['filter']=='none' and rest['opacity']=='1'
-   page.emulate_media(reduced_motion='reduce');page.mouse.move(0,0);card.evaluate('(n)=>n.blur()');page.wait_for_timeout(100);assert read()['filter']=='none'
+   page.emulate_media(reduced_motion='reduce');page.mouse.move(0,0);card.evaluate('(n)=>n.blur()');page.wait_for_timeout(100);assert read()['filter']=='none';assert img.evaluate('(n)=>getComputedStyle(n).animationName')=='none'
+   if route=='/':
+    photo=page.locator('img[src="/assets/work/web-apps.webp"]:visible').first;photo.scroll_into_view_if_needed();page.wait_for_timeout(600);assert photo.evaluate('(n)=>n.complete && n.naturalWidth>0 && n.currentSrc.endsWith("/assets/work/web-apps.webp")')
    assert not errors;rows.append(dict(width=width,route=route,rest=rest,errors=errors));page.close()
  page=b.new_page();page.goto('http://127.0.0.1:8767/projects/slotforge/',wait_until='networkidle');detail=page.locator('.rev-detail-image');assert detail.evaluate('(n)=>getComputedStyle(n).filter')=='grayscale(1)';detail.hover();page.wait_for_timeout(1000);assert detail.evaluate('(n)=>getComputedStyle(n).filter')=='none';page.set_viewport_size({'width':375,'height':900});page.wait_for_timeout(1000);assert detail.evaluate('(n)=>getComputedStyle(n).filter')=='none'
  b.close()

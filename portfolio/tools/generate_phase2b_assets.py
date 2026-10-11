@@ -17,7 +17,9 @@ def generate(out):
   if p['slug'] in ('leprint','cyclr','typd'):
    name={'leprint':'web-apps','cyclr':'browser-tools','typd':'linux-utilities'}[p['slug']]
    existing=ROOT/('assets/work/'+name+'.webp');destination=out/('assets/work/'+name+'.webp')
-   if existing.exists() and existing!=destination:shutil.copy2(existing,destination)
+   if name=='web-apps':
+    with Image.open(ROOT/'assets/framerusercontent.com/a7dbf1f6f0878a3b9ec6d605.jpg') as photo:photo.convert('RGB').save(destination,'WEBP',quality=84,method=6)
+   elif existing.exists() and existing!=destination:shutil.copy2(existing,destination)
    elif not existing.exists():image.save(destination,'WEBP',quality=80,method=6)
  from convert_project_images import convert
  convert(out)
