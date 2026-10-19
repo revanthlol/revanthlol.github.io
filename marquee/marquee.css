@@ -1,0 +1,149 @@
+/*
+ * marquee.css
+ * Every visual knob is a CSS custom property. Override on the element,
+ * a parent, or :root. Behavior (speed, direction, ...) lives in marquee.js.
+ */
+
+/* Defaults have zero specificity: any class or inline style overrides them,
+   regardless of stylesheet order. */
+:where(.marquee) {
+  /* layout */
+  --mq-width: 100%;
+  --mq-height: auto;
+  --mq-gap: 48px;
+  --mq-radius: 24px;
+  --mq-bg: transparent;
+
+  /* edge fade; 0% disables it */
+  --mq-fade: 10%;
+
+  /* type */
+  --mq-color: #ced1b0;
+  --mq-font-family: inherit;
+  --mq-font-size: 20px;
+  --mq-font-weight: 600;
+  --mq-letter-spacing: -0.015em;
+  --mq-line-height: 1.2;
+
+  /* items */
+  --mq-img-height: 26px;
+  --mq-item-opacity: 1;
+  --mq-img-filter: none;
+}
+
+.marquee {
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: var(--mq-width);
+  height: var(--mq-height);
+  overflow: hidden;
+  border-radius: var(--mq-radius);
+  background: var(--mq-bg);
+  color: var(--mq-color);
+  font-family: var(--mq-font-family);
+  font-size: var(--mq-font-size);
+  font-weight: var(--mq-font-weight);
+  letter-spacing: var(--mq-letter-spacing);
+  line-height: var(--mq-line-height);
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-y;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 var(--mq-fade),
+    #000 calc(100% - var(--mq-fade)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    #000 var(--mq-fade),
+    #000 calc(100% - var(--mq-fade)),
+    transparent 100%
+  );
+}
+
+/* vertical: set by JS from direction="up" | "down" */
+.marquee[data-axis="y"] {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: var(--mq-height);
+  touch-action: pan-x;
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0,
+    #000 var(--mq-fade),
+    #000 calc(100% - var(--mq-fade)),
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    180deg,
+    transparent 0,
+    #000 var(--mq-fade),
+    #000 calc(100% - var(--mq-fade)),
+    transparent 100%
+  );
+}
+
+.marquee.is-draggable {
+  cursor: grab;
+}
+
+.marquee.is-dragging {
+  cursor: grabbing;
+}
+
+.marquee__track {
+  display: flex;
+  flex: none;
+  will-change: transform;
+}
+
+.marquee[data-axis="y"] .marquee__track {
+  flex-direction: column;
+}
+
+.marquee__group {
+  display: flex;
+  flex: none;
+  align-items: center;
+  gap: var(--mq-gap);
+  /* trailing space so the seam between groups matches the gap */
+  padding-right: var(--mq-gap);
+}
+
+.marquee[data-axis="y"] .marquee__group {
+  flex-direction: column;
+  padding-right: 0;
+  padding-bottom: var(--mq-gap);
+}
+
+/* Pre-JS state: items sit in a row instead of stacking */
+.marquee:not([data-marquee-ready]) {
+  gap: var(--mq-gap);
+}
+
+/* Zero-specificity item defaults, easy to override */
+:where(.marquee__group > *, .marquee:not([data-marquee-ready]) > *) {
+  flex: none;
+  opacity: var(--mq-item-opacity);
+  color: inherit;
+  text-decoration: none;
+}
+
+:where(.marquee) img,
+:where(.marquee) svg {
+  display: block;
+  flex: none;
+  width: auto;
+  height: var(--mq-img-height);
+  object-fit: contain;
+  filter: var(--mq-img-filter);
+  pointer-events: none;
+  -webkit-user-drag: none;
+}

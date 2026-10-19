@@ -10,6 +10,6 @@ def shell(stage):
    for old,new in [('href="./#projects"','href="/projects/"'),('href="./"','href="/"'),('href="./projects"','href="/projects/"'),('href="./projects/"','href="/projects/"'),('href="./contact"','href="/contact/"'),('href="./contact/"','href="/contact/"'),('href="./404"','href="/404/"'),('href="./404/"','href="/404/"'),('href="./#about"','href="/#about"')]:value=value.replace(old,new)
    result.append('<div class="rev-native-'+n['attrs']['data-framer-name'].lower()+'">'+value+'</div>')
   return ''.join(result)
- header='<header class="rev-captured-header">'+parts('nav')+'<nav id="rev-mobile-links" aria-label="Main navigation" hidden><a href="/projects/">Projects<sup>11</sup></a><a href="/#about">About</a><a href="/contact/">Connect</a></nav></header>'
+ header=(stage/'assets/components/site-header.html').read_text()
  footer='<div class="rev-captured-footer">'+parts('footer')+'</div>'
  return header,footer

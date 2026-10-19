@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marquee: standalone infinite ticker component</title>
+  <meta name="description" content="Zero-dependency infinite marquee with drag, inertia, hover slow-down, vertical mode and CSS variable theming. Demo and playground.">
+  <link rel="stylesheet" href="marquee.css">
+  <style>
+    :root {
+      --bg: #1c1b1b;
+      --card: #2e2c2c;
+      --line: #3d3a3a;
+      --text: #e8e6e1;
+      --muted: #9b978f;
+      --accent: #ced1b0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 880px; margin: 0 auto; padding: 64px 24px 96px; }
+    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: -0.02em; }
+    h2 { margin: 56px 0 4px; font-size: 18px; letter-spacing: -0.01em; }
+    p { margin: 0; color: var(--muted); }
+    code, pre { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 13px; }
+    code { color: var(--accent); }
+    .card {
+      margin-top: 16px;
+      padding: 40px 0;
+      background: var(--card);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .card--tall { padding: 24px; height: 320px; display: flex; justify-content: center; }
+    .card--tight { padding: 24px 0; display: grid; gap: 16px; }
+    pre {
+      margin: 12px 0 0;
+      padding: 12px 14px;
+      background: #141313;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow-x: auto;
+      color: var(--muted);
+    }
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 16px 24px;
+      margin-top: 16px;
+    }
+    .controls label { display: grid; gap: 6px; font-size: 13px; color: var(--muted); }
+    .controls output { color: var(--text); font-variant-numeric: tabular-nums; }
+    .controls .row { display: flex; justify-content: space-between; }
+    input[type="range"] { width: 100%; accent-color: var(--accent); }
+    select, button {
+      font: inherit; font-size: 14px; color: var(--text);
+      background: var(--card); border: 1px solid var(--line);
+      border-radius: 6px; padding: 6px 10px;
+    }
+    button { cursor: pointer; }
+    button:hover, select:hover { border-color: var(--muted); }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    /* Example overrides, all through the public CSS variables */
+    .m-chips { --mq-gap: 12px; --mq-fade: 6%; --mq-font-size: 14px; --mq-font-weight: 500; --mq-color: var(--text); }
+    .m-chips a {
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #252323;
+    }
+    .m-chips a:hover { border-color: var(--accent); }
+    .m-big { --mq-font-size: 44px; --mq-font-weight: 700; --mq-gap: 40px; --mq-color: var(--text); --mq-fade: 12%; }
+    .m-big span:nth-child(even) { color: var(--accent); }
+    .m-vert { --mq-width: 220px; --mq-height: 100%; --mq-gap: 28px; --mq-fade: 18%; --mq-font-size: 22px; }
+    .m-plain { --mq-fade: 0%; --mq-radius: 0; --mq-color: var(--muted); --mq-font-size: 13px; --mq-font-weight: 500; --mq-gap: 32px; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Marquee</h1>
+    <p>Standalone infinite ticker. No framework, no dependencies. Drag it, hover it, theme it with CSS variables.</p>
+  </header>
+
+  <section aria-labelledby="playground">
+    <h2 id="playground">Playground</h2>
+    <p>Defaults match the original Framer component. Everything below updates the live instance.</p>
+
+    <div class="card">
+      <div class="marquee" id="pg" data-marquee data-speed="50" aria-label="Partner names">
+        <svg viewBox="0 0 59 40" role="img" aria-label="Mark" fill="currentColor"><path d="M14 2h31l14 18-14 18H14L0 20z"/></svg>
+        <span>Helix</span>
+        <span>Kosmos</span>
+        <span>Vireo</span>
+        <span>Atlas Bio</span>
+        <span>Lumen</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label>
+        <span class="row">Speed (px/s) <output id="o-speed">50</output></span>
+        <input id="c-speed" type="range" min="0" max="400" step="5" value="50">
+      </label>
+      <label>
+        <span class="row">Gap (px) <output id="o-gap">48</output></span>
+        <input id="c-gap" type="range" min="0" max="160" step="2" value="48">
+      </label>
+      <label>
+        <span class="row">Edge fade (%) <output id="o-fade">10</output></span>
+        <input id="c-fade" type="range" min="0" max="45" step="1" value="10">
+      </label>
+      <label>
+        <span class="row">Font size (px) <output id="o-size">20</output></span>
+        <input id="c-size" type="range" min="12" max="64" step="1" value="20">
+      </label>
+      <label>
+        Direction
+        <select id="c-dir">
+          <option value="left">left</option>
+          <option value="right">right</option>
+        </select>
+      </label>
+      <label>
+        On hover
+        <select id="c-hover">
+          <option value="0">pause</option>
+          <option value="0.3">slow to 30%</option>
+          <option value="1">keep going</option>
+          <option value="3">speed up 3x</option>
+        </select>
+      </label>
+      <label>
+        Playback
+        <button id="c-toggle" type="button" aria-pressed="false">Pause</button>
+      </label>
+    </div>
+  </section>
+
+  <section aria-labelledby="chips">
+    <h2 id="chips">Links as chips</h2>
+    <p>Items are plain elements. Clicks work, but a drag never triggers them.</p>
+    <div class="card">
+      <div class="marquee m-chips" data-marquee data-speed="40" data-direction="right" data-hover-speed="0.25" aria-label="Customers">
+        <a href="#helix">Helix</a>
+        <a href="#kosmos">Kosmos</a>
+        <a href="#vireo">Vireo</a>
+        <a href="#atlas-bio">Atlas Bio</a>
+        <a href="#lumen">Lumen</a>
+        <a href="#orbit">Orbit</a>
+        <a href="#nimbus">Nimbus</a>
+      </div>
+    </div>
+    <pre>&lt;div class="marquee m-chips" data-marquee data-speed="40" data-direction="right" data-hover-speed="0.25"&gt;</pre>
+  </section>
+
+  <section aria-labelledby="big">
+    <h2 id="big">Big type, fast</h2>
+    <p>Same markup, different variables.</p>
+    <div class="card">
+      <div class="marquee m-big" data-marquee data-speed="120" aria-label="Capabilities">
+        <span>Design</span>
+        <span>Build</span>
+        <span>Ship</span>
+        <span>Repeat</span>
+      </div>
+    </div>
+    <pre>.m-big { --mq-font-size: 44px; --mq-font-weight: 700; --mq-gap: 40px; --mq-fade: 12%; }</pre>
+  </section>
+
+  <section aria-labelledby="vertical">
+    <h2 id="vertical">Vertical</h2>
+    <p><code>data-direction="up"</code> or <code>"down"</code> switches the axis. Give it a height.</p>
+    <div class="card card--tall">
+      <div class="marquee m-vert" data-marquee data-direction="up" data-speed="45" aria-label="Updates">
+        <span>Helix</span>
+        <span>Kosmos</span>
+        <span>Vireo</span>
+        <span>Atlas Bio</span>
+        <span>Lumen</span>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="rows">
+    <h2 id="rows">Stacked rows, opposite directions</h2>
+    <p>No fade, no drag, no radius. Good for dense text strips.</p>
+    <div class="card card--tight">
+      <div class="marquee m-plain" data-marquee data-speed="30" data-draggable="false" aria-label="Stack A">
+        <span>TypeScript</span><span>Rust</span><span>Python</span><span>C</span><span>Go</span><span>Zig</span>
+      </div>
+      <div class="marquee m-plain" data-marquee data-speed="30" data-direction="right" data-draggable="false" aria-label="Stack B">
+        <span>Linux</span><span>Arch</span><span>Hyprland</span><span>Neovim</span><span>Docker</span><span>Postgres</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module">
+  import { Marquee } from "./marquee.js";
+
+  const pg = Marquee.get(document.getElementById("pg"));
+  const el = pg.el;
+  const $ = (id) => document.getElementById(id);
+
+  const bind = (id, out, fn) => {
+    const input = $(id);
+    input.addEventListener("input", () => {
+      $(out).textContent = input.value;
+      fn(input.value);
+    });
+  };
+
+  bind("c-speed", "o-speed", (v) => pg.setSpeed(+v));
+  bind("c-gap", "o-gap", (v) => {
+    el.style.setProperty("--mq-gap", v + "px");
+    pg.refresh();
+  });
+  bind("c-fade", "o-fade", (v) => el.style.setProperty("--mq-fade", v + "%"));
+  bind("c-size", "o-size", (v) => {
+    el.style.setProperty("--mq-font-size", v + "px");
+    pg.refresh();
+  });
+
+  $("c-dir").addEventListener("change", (e) => pg.setDirection(e.target.value));
+  $("c-hover").addEventListener("change", (e) => pg.update({ hoverSpeed: +e.target.value }));
+  $("c-toggle").addEventListener("click", (e) => {
+    pg.toggle();
+    e.target.textContent = pg.paused ? "Play" : "Pause";
+    e.target.setAttribute("aria-pressed", String(pg.paused));
+  });
+</script>
+</body>
+</html>

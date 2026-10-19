@@ -17,18 +17,23 @@ def a(label,href,external=False):
 def socials():return e('div',{'className':'rev-socials'},*[e('a',{'href':url,'target':'_blank','rel':'me noopener noreferrer','aria-label':f'Revanth on {name}'},name) for name,url in SOCIALS])
 def footer():return e('footer',{'className':'rev-footer'},e('p',{'className':'rev-wordmark'},'Revanth'),e('div',{'className':'rev-footer-info'},e('div',{},e('p',{'className':'rev-footer-label'},'(INQUIRIES)'),a(EMAIL,'mailto:'+EMAIL)),e('nav',{'aria-label':'Footer'},e('p',{'className':'rev-footer-label'},'(NAVIGATION)'),a('Projects','/projects/'),a('About','/#about'),a('Connect','/contact/'),a('404','/404/')),e('div',{},e('p',{'className':'rev-footer-label'},'(SOCIALS)'),socials())),e('p',{'className':'rev-copyright'},'© Revanth'))
 def header():return e('header',{'className':'rev-header'},a('Revanth','/'),e('nav',{'aria-label':'Main'},a('Projects','/projects/'),a('About','/#about'),a('Connect','/contact/')))
+def nav_terminal():return e('a',{'href':'/terminal/','className':'rev-nav-terminal'},'Terminal')
+def nav_theme():return e('button',{'type':'button','className':'rev-theme-toggle','data-theme-toggle':''},e('span',{'className':'rev-theme-dark'},'Dark mode'),e('span',{'className':'rev-theme-light'},'Light mode'))
+def connect_button():return e('a',{'href':'/contact/','className':'rev-static-connect','aria-label':'Connect'},e('span',{'className':'rev-connect-rest'},'Connect'),e('span',{'className':'rev-connect-hover','aria-hidden':'true'},e('span',{'className':'rev-connect-avatars'},e('span',{'className':'rev-connect-avatar'},'R'),e('span',{'className':'rev-connect-avatar'},'Y')),"Let's chat!"))
 def card(p):
  return e('article',{'className':'rev-card'},e('a',{'href':p['href'],'className':'rev-card-primary'},e('div',{'className':'rev-image-mask'},e('img',{'src':p['image'],'alt':'','width':1476,'height':1164,'loading':'lazy','className':'rev-scan-base','aria-hidden':'true'}),e('img',{'src':p['image'],'alt':'','width':1476,'height':1164,'loading':'lazy','className':'rev-focus-rack'})),e('h3',{},p['name'])),e('p',{'className':'rev-card-description'},p['description']),e('div',{'className':'rev-labels'},e('span',{},p['category']),*[e('span',{},t) for t in p['tags']]),e('div',{'className':'rev-project-links'},*[a(l['label'],l['href'],True) for l in p['links']]))
 def grid(home=False):
  section=e('section',{'className':'rev-projects rev-section','id':'projects','data-framer-name':'Selected projects' if home else 'Projects'},e('h2' if home else 'h1',{},'Projects',e('sup',{'className':'rev-project-count'},'04' if home else f'{len(PROJECTS):02d}')),e('div',{'className':'rev-grid'},*[card(p) for p in PROJECTS[:4] if home] if home else [card(p) for p in PROJECTS]),a('All projects','/projects/') if home else None)
- return e('div',{'className':'rev-home-projects-wrap'},e('section',{'className':'rev-terminal-section','aria-label':'Interactive portfolio terminal'},e('iframe',{'src':'/terminal/','title':'Interactive portfolio terminal','loading':'lazy'})),section) if home else section
+ return e('div',{'className':'rev-home-projects-wrap'},section) if home else section
 
 def carousel():return e('div',{'className':'rev-carousel','aria-label':'Selected project images'},e('div',{'className':'rev-carousel-track'},*[e('div',{'className':'rev-carousel-set','aria-hidden':'true' if repeat else 'false'},*[e('img',{'src':p['image'],'alt':'','width':1476,'height':1164}) for p in PROJECTS[:4]]) for repeat in range(2)]))
-def hero():return e('div',{'className':'rev-hero'},e('h1',{},e('span',{},'Student.'),e('span',{},'Open source developer.')),e('p',{},HERO),a('Connect','/contact/'),carousel())
-def tech():return e('section',{'className':'rev-tech','aria-label':'Technologies'},e('p',{},'Technologies'),e('div',{'className':'rev-marquee'},e('div',{'className':'rev-marquee-track'},*[e('div',{'className':'rev-marquee-set','aria-hidden':'true' if repeat else 'false'},*[e('span',{},t) for t in TECH]) for repeat in range(2)])))
+def hero():return e('div',{'className':'rev-hero'},e('h1',{},'Building things instead of accepting that the existing tool is “good enough.”'),e('p',{},HERO),a('Connect','/contact/'),carousel())
+def tech():
+ return e('section',{'className':'rev-tech','aria-label':'Technology marquee'},e('div',{'className':'marquee rev-technology-marquee','data-speed':'38','data-hover-speed':'0.25','data-draggable':'true','aria-label':'Tools and languages'},*[e('span',{},t) for t in TECH]),e('button',{'className':'rev-marquee-toggle','type':'button','aria-pressed':'false','aria-label':'Pause marquee'}))
+
 def about():return e('section',{'className':'rev-about rev-section','id':'about'},e('h2',{},'About me'),e('p',{},ABOUT))
 def contact():return e('section',{'className':'rev-contact rev-section'},e('h1',{},'Connect'),e('p',{},'Email me or find me on GitHub and elsewhere.'),a(EMAIL,'mailto:'+EMAIL),socials())
-def cta():return e('section',{'className':'rev-cta rev-section'},e('h2',{},'Get in touch'),e('a',{'href':'/contact/','className':'rev-static-connect','aria-label':'Connect'},e('span',{'className':'rev-connect-rest'},'Connect'),e('span',{'className':'rev-connect-hover','aria-hidden':'true'},"Let's chat")))
+def cta():return e('section',{'className':'rev-cta rev-section'},e('h2',{},'Get in touch'),connect_button())
 def detail(p):
  fields=[e('div',{},e('dt',{},'(CATEGORY)'),e('dd',{},p['category']))]
  if p['language']:fields.append(e('div',{},e('dt',{},'(LANGUAGE)'),e('dd',{},p['language'])))
@@ -45,5 +50,5 @@ def markup(n):
  if tag in ['img','br','hr']:return '<'+tag+attrs+'>'
  return '<'+tag+attrs+'>'+''.join(markup(c) for c in children)+'</'+tag+'>'
 def native_socials(cls):return e('div',{'className':cls},e('p',{'className':'rev-native-social-label'},'(SOCIALS)'),socials())
-def definitions():return {'hero-copy':e('p',{'className':'framer-text framer-styles-preset-rqhmc2 rev-native-hero-copy'},HERO),'contact-links':e('div',{'className':'rev-native-contact-links'},a(EMAIL,'mailto:'+EMAIL),socials()),'footer-socials-desktop':native_socials('framer-axpwzq'),'footer-socials-phone':native_socials('framer-1153bhh'),'home-projects':grid(True),'projects':grid(False),'hero':hero(),'tech':tech(),'about':about(),'contact':contact(),'footer':footer(),'cta':cta()}
+def definitions():return {'nav-terminal':nav_terminal(),'nav-theme':nav_theme(),'connect-button':connect_button(),'hero-copy':e('p',{'className':'framer-text framer-styles-preset-rqhmc2 rev-native-hero-copy'},HERO),'contact-links':e('div',{'className':'rev-native-contact-links'},a(EMAIL,'mailto:'+EMAIL),socials()),'footer-socials-desktop':native_socials('framer-axpwzq'),'footer-socials-phone':native_socials('framer-1153bhh'),'home-projects':grid(True),'projects':grid(False),'hero':hero(),'tech':tech(),'about':about(),'contact':contact(),'footer':footer(),'cta':cta()}
 assert len(PROJECTS) in (10,11) and len({p['slug'] for p in PROJECTS})==len(PROJECTS) and len(TECH)==24
