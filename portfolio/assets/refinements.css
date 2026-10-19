@@ -258,3 +258,15 @@ html[data-theme] [data-framer-name="Border left"],
 html[data-theme] [data-framer-name="Border Right"] { display: none; }
 html[data-theme] .rev-terminal-page .window,
 html[data-theme] .rev-terminal-page .window.maximised { border-inline: 0; }
+
+/* The hero's entrance can cross the shell edge without passing behind the gutters. */
+body { isolation: isolate; }
+#main { position: relative; z-index: 1; }
+html[data-theme] [data-framer-root],
+html[data-theme] .framer-2bgb8g { background: transparent; }
+html[data-theme] :is(.framer-10134r8, .framer-1aznp8s, .rev-detail, .rev-notfound, .rev-captured-footer) { background: var(--page); }
+html[data-theme] .rev-static > :is(.rev-detail, .rev-notfound, footer),
+html[data-theme] .rev-terminal-page .window { z-index: 1; }
+html[data-theme] .framer-UVQZ8.framer-72rtr7,
+html[data-theme] .framer-UVQZ8 .framer-1kppelj { overflow: visible; }
+html[data-theme] .rev-static > :is(.rev-detail, .rev-notfound, footer) { position: relative; }

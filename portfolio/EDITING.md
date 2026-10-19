@@ -86,3 +86,10 @@ in the two gutters outside 1200px. It updates its grayscale palette with the
 resolved site theme and removes the canvases at smaller widths. The supplied
 component retains its reduced-motion fallback and attribution header.
 The gutter blending and latest navbar changes have not been browser-tested.
+
+The gutter elements move out of the header into the body at startup, below
+`#main`, so they cannot cover the hero entrance. The supplied tile component's
+opt-in `global-pointer` attribute listens across the window and accepts pulse
+origins outside its own box. Coordinates remain relative to each gutter so
+waves travel outward from the actual click. Reduced-motion stays static.
+Gutter tile opacity is 45% in light mode and 25% in dark mode.

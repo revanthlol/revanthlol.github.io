@@ -25,7 +25,7 @@ with sync_playwright() as p:
             assert header.locator('.cm__links a').all_text_contents()[-1].strip().startswith('05')
             assert header.locator('.cm__links a[href="/contact/"]').count() == 1
             assert header.locator('.cm__cta').count() == 0
-            assert header.locator('tron-tiles').count() == (2 if width > 1200 else 0)
+            assert page.locator('.site-gutter tron-tiles').count() == (2 if width > 1200 else 0)
             menu = header.locator('[data-cm]')
             for theme in ('light', 'dark'):
                 if width < 810:

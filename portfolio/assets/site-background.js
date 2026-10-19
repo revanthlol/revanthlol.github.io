@@ -1,5 +1,7 @@
 const wide = matchMedia('(min-width: 1201px)');
 const gutters = [...document.querySelectorAll('.site-gutter')];
+// Keep the background out of the fixed navbar's foreground stacking context.
+document.body.prepend(...gutters);
 
 function recolor() {
   const dark = document.documentElement.dataset.theme === 'dark';
@@ -9,6 +11,7 @@ function recolor() {
     if (!tiles) continue;
     tiles.config = {
       cursor: 'default',
+      hover: { radius: 600, lift: .25 },
       grid: { cellSize: 72, gap: 10, cornerRadius: 14, lineColor: dark ? '#383838' : '#ffffff', lineOpacity: .5 },
       tile: {
         faceColor: dark ? '#202020' : '#f2f2f2',
@@ -29,7 +32,11 @@ async function resize() {
     await import('./tron-tiles.js');
     if (!wide.matches) return;
     for (const gutter of gutters) {
-      if (!gutter.firstElementChild) gutter.append(document.createElement('tron-tiles'));
+      if (!gutter.firstElementChild) {
+        const tiles = document.createElement('tron-tiles');
+        tiles.setAttribute('global-pointer', '');
+        gutter.append(tiles);
+      }
     }
     recolor();
   } else {

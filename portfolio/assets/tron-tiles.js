@@ -893,7 +893,7 @@
         const r = host.getBoundingClientRect();
         const x = clientX - r.left;
         const y = clientY - r.top;
-        if (x < 0 || y < 0 || x > r.width || y > r.height) return;
+        if (!host.hasAttribute('global-pointer') && (x < 0 || y < 0 || x > r.width || y > r.height)) return;
         addPulse(x, y, 1);
         kick();
       };
@@ -912,9 +912,10 @@
 
       window.addEventListener('pointerdown', onWindowDown);
       host.addEventListener('pointerdown', onHostDown);
-      host.addEventListener('pointermove', onMove);
+      const pointerTarget = host.hasAttribute('global-pointer') ? window : host;
+      pointerTarget.addEventListener('pointermove', onMove);
       host.addEventListener('pointerenter', onMove);
-      host.addEventListener('pointerleave', onLeave);
+      pointerTarget.addEventListener('pointerleave', onLeave);
 
       if (typeof ResizeObserver !== 'undefined') {
         resizeObs = new ResizeObserver((entries) => {
@@ -945,9 +946,9 @@
         if (visObs) visObs.disconnect();
         window.removeEventListener('pointerdown', onWindowDown);
         host.removeEventListener('pointerdown', onHostDown);
-        host.removeEventListener('pointermove', onMove);
+        pointerTarget.removeEventListener('pointermove', onMove);
         host.removeEventListener('pointerenter', onMove);
-        host.removeEventListener('pointerleave', onLeave);
+        pointerTarget.removeEventListener('pointerleave', onLeave);
         st.handleProps = null;
         st.pulse = null;
       };

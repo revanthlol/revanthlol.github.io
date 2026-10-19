@@ -21,10 +21,12 @@
 @media (hover: hover) { .site-header .site-nav-link:hover { border-color: var(--ink); } }
 .site-gutter { display: none; }
 @media (min-width: 1201px) {
-  .site-gutter { display: block; position: absolute; top: 0; width: calc((100vw - var(--shell-width)) / 2); height: 100dvh; background: var(--page); }
-  .site-gutter--left { right: 100%; }
-  .site-gutter--right { left: 100%; }
-  .site-gutter::after { content: ""; position: absolute; top: 0; bottom: 0; width: 64px; backdrop-filter: blur(12px); pointer-events: none; }
+  .site-gutter { display: block; position: fixed; top: 0; z-index: 0; width: calc((100vw - var(--shell-width)) / 2); height: 100dvh; background: var(--page); pointer-events: none; }
+  .site-gutter tron-tiles { opacity: .45; }
+  html[data-theme="dark"] .site-gutter tron-tiles { opacity: .25; }
+  .site-gutter--left { left: 0; }
+  .site-gutter--right { right: 0; }
+  .site-gutter::after { content: ""; position: absolute; top: 0; bottom: 0; width: min(120px, 100%); backdrop-filter: blur(16px); pointer-events: none; }
   .site-gutter--left::after { right: 0; background: linear-gradient(to right, transparent, var(--page)); mask-image: linear-gradient(to right, transparent, black); }
   .site-gutter--right::after { left: 0; background: linear-gradient(to left, transparent, var(--page)); mask-image: linear-gradient(to left, transparent, black); }
 }
