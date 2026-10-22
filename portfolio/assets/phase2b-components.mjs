@@ -2,6 +2,7 @@
 import { C as React, o as init } from "./framerusercontent.com/8d44bc9696caad172d1da6d5.mjs";
 import { trees } from "./components/content.mjs";
 import { Marquee } from "./marquee/marquee.js";
+import { InteractiveHalftoneWordmark } from "./halftone-wordmark.js";
 init();
 function element(node, ref) {
   if (node === null || typeof node === "string") return node;
@@ -33,5 +34,8 @@ export function Static({ kind }) {
       instance?.destroy();
     };
   }, [kind]);
+  if (kind === "footer-wordmark") {
+    return React.createElement(InteractiveHalftoneWordmark, { text: "Revanth" });
+  }
   return element(trees[kind], kind === "tech" ? ref : null);
 }

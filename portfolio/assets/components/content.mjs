@@ -2856,5 +2856,31 @@ export const trees = {
         ]
       ]
     ]
+  ],
+  "footer-wordmark": [
+    "div",
+    {
+      "className": "interactive-halftone-wordmark framer-enlusb",
+      "role": "img",
+      "aria-label": "Revanth"
+    },
+    [
+      [
+        "canvas",
+        {
+          "aria-hidden": "true"
+        },
+        []
+      ],
+      [
+        "span",
+        {
+          "className": "rev-sr-only"
+        },
+        [
+          "Revanth"
+        ]
+      ]
+    ]
   ]
 };

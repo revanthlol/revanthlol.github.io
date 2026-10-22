@@ -68,7 +68,7 @@ Current requested refinements: 1200px desktop shell including 404 and terminal, 
 
 Edit `assets/components/site-header.html`, then run `python3 portfolio/tools/sync_components.py` to copy the same header into every public page. All navigation uses absolute site paths: `/`, `/projects/`, `/#about`, `/contact/`, `/terminal/`. Internal Connect buttons stay in the current tab. Project details mark Projects as the current section. The mobile panel closes for navigation, Escape and desktop resizing, keeps focus inside while open, and locks background scrolling.
 
-Theme preferences use `portfolio-theme`. Missing storage means Light, preserving the user's chosen default. System is an explicit stored choice that follows OS changes. Desktop and mobile switchers stay synchronized; the resolved mode always reaches the site's `data-theme` tokens before first paint.
+Theme preferences use `portfolio-theme`. Missing storage defaults to System mode, dynamically checking and following OS dark/light appearance. Users can explicitly choose Light, Dark, or System. Desktop and mobile switchers stay synchronized; the resolved mode always reaches the site's `data-theme` tokens before first paint.
 
 The hero headline is now: Building things instead of accepting that the existing tool is “good enough.” Its original Framer `effect:Ca` word reveal, wrappers and breakpoint configuration are retained. Prerendered words are updated in every breakpoint variant. The old special rule forcing only the first word onto its own line is overridden so the longer copy wraps naturally.
 

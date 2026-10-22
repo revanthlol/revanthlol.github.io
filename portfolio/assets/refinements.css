@@ -270,3 +270,68 @@ html[data-theme] .rev-terminal-page .window { z-index: 1; }
 html[data-theme] .framer-UVQZ8.framer-72rtr7,
 html[data-theme] .framer-UVQZ8 .framer-1kppelj { overflow: visible; }
 html[data-theme] .rev-static > :is(.rev-detail, .rev-notfound, footer) { position: relative; }
+
+/* Interactive Halftone Wordmark with Liquid Silver Chrome Warp */
+.interactive-halftone-wordmark,
+.framer-mdI2K .interactive-halftone-wordmark.framer-enlusb,
+.framer-mdI2K .framer-enlusb.interactive-halftone-wordmark {
+  position: relative;
+  width: 100%;
+  height: clamp(98px, calc(100vw * 0.272), 220px) !important;
+  aspect-ratio: 807.7 / 220;
+  overflow: hidden;
+  cursor: crosshair;
+  user-select: none;
+  display: block;
+}
+.interactive-halftone-wordmark canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.rev-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* CTA "Connect" button above footer: prevent over-expansion into wide pill */
+.framer-CuZuO .framer-1x0bqar-container {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+.framer-CuZuO .framer-1x0bqar-container a.framer-SYR2u,
+.framer-CuZuO .framer-1x0bqar-container .framer-1pyx00f {
+  width: 220px !important;
+  max-width: 240px !important;
+}
+@media (max-width: 809px) {
+  .framer-CuZuO.framer-v-1kpupnh .framer-1x0bqar-container {
+    justify-content: center !important;
+  }
+  .framer-CuZuO.framer-v-1kpupnh .framer-1x0bqar-container a.framer-SYR2u,
+  .framer-CuZuO.framer-v-1kpupnh .framer-1x0bqar-container .framer-1pyx00f {
+    width: 100% !important;
+    max-width: 340px !important;
+  }
+}
+
+/* Contact page: hide bottom links section in footer since all links are already on top; keep big wordmark */
+body[data-page="contact"] footer .framer-10nwf8x,
+body.page-contact footer .framer-10nwf8x {
+  display: none !important;
+}
+body[data-page="contact"] footer,
+body.page-contact footer {
+  padding-bottom: 24px !important;
+}
+

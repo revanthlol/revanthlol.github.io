@@ -2,15 +2,15 @@
 const config = window.ThemeSwitcherConfig;
 const order = ['system', 'light', 'dark'];
 const system = matchMedia('(prefers-color-scheme: dark)');
-let current = document.documentElement.dataset.themeMode || 'light';
+let current = document.documentElement.dataset.themeMode || 'system';
 let transition;
 const resolve = mode => mode === 'system' ? (system.matches ? 'dark' : 'light') : mode;
 
 function read() {
   try {
     const value = localStorage.getItem(config.key);
-    return order.includes(value) ? value : 'light';
-  } catch { return 'light'; }
+    return order.includes(value) ? value : 'system';
+  } catch { return 'system'; }
 }
 function paint() {
   const resolved = resolve(current);

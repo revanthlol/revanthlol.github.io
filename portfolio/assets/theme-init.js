@@ -1,4 +1,4 @@
-// Light remains the default; System is an explicit, persistent choice.
+// System is the default mode, dynamically detecting OS dark/light appearance.
 (() => {
   window.ThemeSwitcherConfig = {
     key: 'portfolio-theme',
@@ -9,7 +9,7 @@
       root.style.colorScheme = resolved;
     },
   };
-  let mode = 'light';
+  let mode = 'system';
   try {
     const saved = localStorage.getItem(window.ThemeSwitcherConfig.key);
     if (['light', 'dark', 'system'].includes(saved)) mode = saved;

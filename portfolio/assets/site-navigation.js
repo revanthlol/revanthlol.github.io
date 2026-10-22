@@ -1,5 +1,8 @@
 import './preferences.js';
 import './site-background.js';
+import { initAllHalftoneWordmarks } from './halftone-wordmark.js';
+
+initAllHalftoneWordmarks();
 
 const header = document.querySelector('[data-site-header]');
 const menu = header.querySelector('[data-cm]');
@@ -55,6 +58,14 @@ document.addEventListener('keydown', event => {
 desktop.addEventListener('change', () => { if (desktop.matches) setOpen(false); });
 
 function updateRoute() {
+  const isContact = location.pathname.replace(/\/$/, '') === '/contact' || location.pathname.includes('/contact');
+  if (isContact) {
+    document.body.dataset.page = 'contact';
+    document.body.classList.add('page-contact');
+  } else {
+    delete document.body.dataset.page;
+    document.body.classList.remove('page-contact');
+  }
   header.querySelectorAll('a[href^="/"]').forEach(link => {
     const url = new URL(link.href);
     const current = url.pathname === location.pathname && url.hash === location.hash;
