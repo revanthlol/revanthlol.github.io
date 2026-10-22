@@ -443,7 +443,7 @@ export default function ContributionSkyline({
   data,
   endDate,
   view: viewProp,
-  defaultView = "3d",
+  defaultView,
   onViewChange,
   palette = "github",
   title,
@@ -463,6 +463,7 @@ export default function ContributionSkyline({
   className = "",
   scrollDriven = false,
 }: ContributionSkylineProps) {
+  const resolvedDefaultView: View = defaultView ?? (scrollDriven ? "2d" : "3d")
   const endKey = endDate == null ? null : dayMs(endDate)
   const model = React.useMemo(() => {
     const dates = (data ?? []).map((d) => dayMs(d.date)).filter(Number.isFinite)
@@ -472,7 +473,7 @@ export default function ContributionSkyline({
     return { ...grid, stats: computeStats(grid.cells), months: monthLabels(grid.cells, grid.weeks, locale) }
   }, [data, endKey, seed, weekStart, locale])
 
-  const [innerView, setInnerView] = React.useState<View>(defaultView)
+  const [innerView, setInnerView] = React.useState<View>(resolvedDefaultView)
   const view = viewProp ?? innerView
   const userManualRef = React.useRef(false)
   const setView = (v: View) => {
@@ -1123,8 +1124,9 @@ export default function ContributionSkyline({
         cfg.current.userManualRef.current = false
       }
       if (cfg.current.userManualRef.current || reduced) return
-      const start = vh * 0.88
-      const end = vh * 0.35
+      // Stay flat in 2D while entering and visible; only fold to 3D once centered in view:
+      const start = vh * 0.40
+      const end = vh * 0.08
       const raw = (start - rect.top) / (start - end)
       scrollGoal = clamp01(raw)
       const nextView: View = scrollGoal >= 0.5 ? "3d" : "2d"

@@ -5,6 +5,18 @@ export function initPreloader() {
   const preloaderEl = document.getElementById('rev-preloader');
   if (!preloaderEl) return;
 
+  // Only run preloader on first cold session visit while loading assets.
+  // Bypass completely on reloads, internal page navigations, and cached sessions.
+  let alreadyShown = false;
+  try {
+    alreadyShown = sessionStorage.getItem('rev_preloader_done') === '1';
+  } catch (_) {}
+
+  if (alreadyShown) {
+    preloaderEl.remove();
+    return;
+  }
+
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark' ||
     (!document.documentElement.hasAttribute('data-theme') && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
 
@@ -23,6 +35,9 @@ export function initPreloader() {
         caption: 'SYSTEM INITIALIZED · REACT HYDRATION READY',
         exit: 'blinds',
         onComplete: () => {
+          try {
+            sessionStorage.setItem('rev_preloader_done', '1');
+          } catch (_) {}
           setTimeout(() => {
             try { preloaderEl.remove(); } catch (_) {}
           }, 120);

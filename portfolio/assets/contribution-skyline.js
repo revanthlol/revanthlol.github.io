@@ -285,7 +285,7 @@ function ContributionSkyline({
   data,
   endDate,
   view: viewProp,
-  defaultView = "3d",
+  defaultView,
   onViewChange,
   palette = "github",
   title,
@@ -305,6 +305,7 @@ function ContributionSkyline({
   className = "",
   scrollDriven = false
 }) {
+  const resolvedDefaultView = defaultView ?? (scrollDriven ? "2d" : "3d");
   const endKey = endDate == null ? null : dayMs(endDate);
   const model = useMemo(() => {
     const dates = (data ?? []).map((d) => dayMs(d.date)).filter(Number.isFinite);
@@ -313,7 +314,7 @@ function ContributionSkyline({
     const grid = buildGrid(days, end, weekStart);
     return { ...grid, stats: computeStats(grid.cells), months: monthLabels(grid.cells, grid.weeks, locale) };
   }, [data, endKey, seed, weekStart, locale]);
-  const [innerView, setInnerView] = useState(defaultView);
+  const [innerView, setInnerView] = useState(resolvedDefaultView);
   const view = viewProp ?? innerView;
   const userManualRef = useRef(false);
   const setView = (v) => {
@@ -912,8 +913,8 @@ function ContributionSkyline({
         cfg.current.userManualRef.current = false;
       }
       if (cfg.current.userManualRef.current || reduced) return;
-      const start = vh * 0.88;
-      const end = vh * 0.35;
+      const start = vh * 0.4;
+      const end = vh * 0.08;
       const raw = (start - rect.top) / (start - end);
       scrollGoal = clamp01(raw);
       const nextView = scrollGoal >= 0.5 ? "3d" : "2d";

@@ -27,7 +27,7 @@ export function SkylineSection() {
     { className: "rev-skyline-section-wrap", id: "activity", "aria-label": "GitHub Contributions" },
     React.createElement(ContributionSkyline, {
       data,
-      palette: "mono",
+      palette: "github",
       scrollDriven: true,
       title: React.createElement(
         React.Fragment,

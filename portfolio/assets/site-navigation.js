@@ -52,7 +52,7 @@ function ensureSkyline() {
     const root = createRoot(card);
     root.render(React.createElement(ContributionSkyline, {
       data: REVANTH_CONTRIBUTIONS,
-      palette: "mono",
+      palette: "github",
       scrollDriven: true,
       title: React.createElement(
         React.Fragment,
