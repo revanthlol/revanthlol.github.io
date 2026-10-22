@@ -3,12 +3,49 @@ import { C as React, o as init } from "./framerusercontent.com/8d44bc9696caad172
 import { trees } from "./components/content.mjs";
 import { Marquee } from "./marquee/marquee.js";
 import { InteractiveHalftoneWordmark } from "./halftone-wordmark.js";
+import ContributionSkyline from "./contribution-skyline.js";
+import { REVANTH_CONTRIBUTIONS } from "./contributions-data.js";
+
 init();
+
+export function SkylineSection() {
+  const [data, setData] = React.useState(REVANTH_CONTRIBUTIONS);
+  React.useEffect(() => {
+    fetch("https://github-contributions-api.jogruber.de/v4/revanthlol")
+      .then(res => res.json())
+      .then(json => {
+        if (json && Array.isArray(json.contributions) && json.contributions.length > 0) {
+          const sorted = json.contributions.slice().sort((a, b) => a.date.localeCompare(b.date));
+          setData(sorted);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  return React.createElement(
+    "section",
+    { className: "rev-skyline-section-wrap", id: "activity", "aria-label": "GitHub Contributions" },
+    React.createElement(ContributionSkyline, {
+      data,
+      palette: "mono",
+      scrollDriven: true,
+      title: React.createElement(
+        React.Fragment,
+        null,
+        React.createElement("span", { className: "font-semibold tabular-nums" }, "803"),
+        " contributions in the last year"
+      ),
+      className: "rev-skyline-card"
+    })
+  );
+}
+
 function element(node, ref) {
   if (node === null || typeof node === "string") return node;
   const [tag, props, children] = node;
   return React.createElement(tag, ref ? { ...props, ref } : props, ...children.map(child => element(child)));
 }
+
 export function Static({ kind }) {
   const ref = React.useRef(null);
   React.useEffect(() => {
@@ -34,6 +71,11 @@ export function Static({ kind }) {
       instance?.destroy();
     };
   }, [kind]);
+
+  if (kind === "skyline") {
+    return React.createElement(SkylineSection);
+  }
+
   if (kind === "footer-wordmark") {
     return React.createElement(InteractiveHalftoneWordmark, { text: "Revanth" });
   }

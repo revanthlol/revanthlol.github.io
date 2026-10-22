@@ -1,8 +1,77 @@
 import './preferences.js';
 import './site-background.js';
 import { initAllHalftoneWordmarks } from './halftone-wordmark.js';
+import { initPreloader } from './preloader-mount.js';
+import React, { createRoot } from './react-shim.js';
+import ContributionSkyline from './contribution-skyline.js';
+import { REVANTH_CONTRIBUTIONS } from './contributions-data.js';
 
+initPreloader();
 initAllHalftoneWordmarks();
+
+// Top slim scroll progress bar
+const progressBar = document.getElementById('rev-scroll-progress') || (() => {
+  const bar = document.createElement('div');
+  bar.id = 'rev-scroll-progress';
+  bar.className = 'rev-scroll-progress';
+  bar.setAttribute('aria-hidden', 'true');
+  document.body.prepend(bar);
+  return bar;
+})();
+
+function updateScrollProgress() {
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = docHeight > 0 ? Math.min(1, Math.max(0, scrollTop / docHeight)) : 0;
+  progressBar.style.transform = `scaleX(${progress})`;
+}
+window.addEventListener('scroll', updateScrollProgress, { passive: true });
+window.addEventListener('resize', updateScrollProgress, { passive: true });
+updateScrollProgress();
+
+function ensureSkyline() {
+  if (document.getElementById('activity')) return;
+  const isHome = location.pathname === '/' || location.pathname === '' || location.pathname === '/index.html' || location.pathname.endsWith('/portfolio/') || location.pathname.endsWith('/portfolio/index.html');
+  if (!isHome) return;
+
+  const projects = document.querySelector('.rev-home-projects-wrap') || document.querySelector('#projects');
+  if (!projects || !projects.parentNode) return;
+
+  const section = document.createElement('section');
+  section.className = 'rev-skyline-section-wrap';
+  section.id = 'activity';
+  section.setAttribute('aria-label', 'GitHub Contributions');
+
+  const card = document.createElement('div');
+  card.className = 'rev-skyline-card';
+  section.appendChild(card);
+
+  projects.parentNode.insertBefore(section, projects);
+
+  try {
+    const root = createRoot(card);
+    root.render(React.createElement(ContributionSkyline, {
+      data: REVANTH_CONTRIBUTIONS,
+      palette: "mono",
+      scrollDriven: true,
+      title: React.createElement(
+        React.Fragment,
+        null,
+        React.createElement("span", { className: "font-semibold tabular-nums" }, "803"),
+        " contributions in the last year"
+      ),
+      className: "rev-skyline-card"
+    }));
+  } catch (err) {
+    console.warn('Skyline mount notice:', err);
+  }
+}
+
+ensureSkyline();
+const skylineObserver = new MutationObserver(() => {
+  ensureSkyline();
+});
+skylineObserver.observe(document.body, { childList: true, subtree: true });
 
 const header = document.querySelector('[data-site-header]');
 const menu = header.querySelector('[data-cm]');
